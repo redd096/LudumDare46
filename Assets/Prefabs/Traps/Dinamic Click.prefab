@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfTrap: 1
   speed: 1
-  patrolMovements:
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolMovements: []
   approx: 0
   clickToRemove: 3
 --- !u!1001 &2912477786155182706
@@ -99,7 +97,7 @@ PrefabInstance:
     - target: {fileID: 5126227264885362203, guid: 286b7038a214832449c4aea19b697440,
         type: 3}
       propertyPath: m_Name
-      value: lv1 Dinamic Click
+      value: Dinamic Click
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286b7038a214832449c4aea19b697440, type: 3}
