@@ -12,7 +12,7 @@ namespace LudumDare46
         z, x, c, v, b, n, m
     }
 
-    public class TrapKeepPressed : Trap
+    public class TrapKeepPressed : MonoBehaviour
     {
         [Header("Debug KeepPressed")]
         [SerializeField] Keys[] keysToDisable = default;
@@ -22,12 +22,12 @@ namespace LudumDare46
         bool keepingPressed;
         float lastTimePressed;
 
-        protected override void OnMouseDown()
+        protected void OnMouseDown()
         {
             UpdateUI();
         }
 
-        protected override void Update()
+        protected void Update()
         {
             //if key up
             if(keepingPressed && Input.GetKeyUp(keysToDisable[keysIndex].ToString()))
@@ -38,6 +38,7 @@ namespace LudumDare46
             //if pressed key
             if (Input.GetKeyDown(keysToDisable[keysIndex].ToString()))
             {
+                Debug.Log("Disattivando....");
                 keepingPressed = true;
                 lastTimePressed = Time.time + timeToKeepPressed;
             }
@@ -45,6 +46,7 @@ namespace LudumDare46
             //if keep pressed for the time
             if(keepingPressed && Time.time > lastTimePressed)
             {
+                Debug.Log("MORIIIIIIII");
                 keepingPressed = false;
                 keysIndex++;
 
@@ -59,7 +61,7 @@ namespace LudumDare46
             }
         }
 
-        protected override void UpdateUI()
+        protected void UpdateUI()
         {
             Debug.Log(keysToDisable[keysIndex] + " - " + timeToKeepPressed);
         }
@@ -82,6 +84,11 @@ namespace LudumDare46
             }
 
             timeToKeepPressed = timeKeepPressed;
+        }
+
+        protected void Die()
+        {
+            gameObject.SetActive(false);
         }
     }
 }

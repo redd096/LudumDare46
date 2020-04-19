@@ -42,13 +42,13 @@ namespace LudumDare46
         [Header("General")]
         [Range(0, 100)]
         public float percentageStaticPrefab = default;
-        public Trap staticPrefab = default;
+        public TrapMovement staticPrefab = default;
         [Range(0, 100)]
         public float percentageDinamicPrefab = default;
-        public Trap dinamicPrefab = default;
+        public TrapMovement dinamicPrefab = default;
         [Range(0, 100)]
         public float percentageAlivePrefab = default;
-        public Trap alivePrefab = default;
+        public TrapMovement alivePrefab = default;
 
 
         [Header("Statico")]

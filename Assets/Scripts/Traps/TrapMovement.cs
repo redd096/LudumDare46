@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
 using UnityEngine;
 
 namespace LudumDare46
@@ -19,7 +20,8 @@ namespace LudumDare46
         findRandomAndKill,
     }
 
-    public class Trap : MonoBehaviour
+    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+    public class TrapMovement : MonoBehaviour
     {
         [Header("Trap Movement")]
         [SerializeField] TypeOfTrap typeOfTrap = default;
@@ -29,18 +31,50 @@ namespace LudumDare46
 
         [Header("Debug Movement")]
         [SerializeField] protected float speed = 1;
-        [SerializeField] protected Vector3[] patrolMovements = default;
+        [SerializeField] protected GameObject[] patrolMovements = default;
         [SerializeField] float approx = 0.1f;
 
         int patrolIndex;
 
+        Coroutine patrolCoroutine;
+
         Transform target;
+
+        private AILerp aILerp;
+        private AIDestinationSetter aIDestinationSetter;
+
+        private void Awake()
+        {
+            aILerp = GetComponent<AILerp>();
+            aIDestinationSetter = GetComponent<AIDestinationSetter>();
+        }
+
+        private void OnEnable()
+        {
+            if (typeOfTrap == TypeOfTrap.dinamico)
+            {
+                //two random points to move
+                patrolMovements[0] = new GameObject();
+                patrolMovements[0].transform.position = Utils.GetRandomWalkableNode();
+                patrolMovements[1] = new GameObject();
+                patrolMovements[1].transform.position = this.transform.position; // la seconda posizione sarà sempre dove sono spawnato
+                patrolIndex = 0;
+                patrolCoroutine = null;
+            }
+        }
 
         void Start()
         {
-            if (typeOfTrap == TypeOfTrap.dinamico && patrolMovements.Length < 2)
+            if (typeOfTrap == TypeOfTrap.dinamico)
             {
-                Debug.LogWarning("Ammo' che me li metti 2 punti dove andare?");
+                if (patrolMovements.Length < 2)
+                {
+                    Debug.LogWarning("Ammo' che me li metti 2 punti dove andare?");
+                }
+                else
+                {
+                    patrolMovements[1].transform.position = this.transform.position;
+                }
             }
         }
 
@@ -57,10 +91,11 @@ namespace LudumDare46
             Debug.Log("clicked");
         }
 
-        protected void Die()
+        public void Set(float speed)
         {
-            gameObject.SetActive(false);
+            this.speed = speed;
         }
+
 
         protected virtual void UpdateUI()
         {
@@ -73,27 +108,35 @@ namespace LudumDare46
 
         void Dinamico()
         {
+            if (patrolCoroutine != null) { return; }
+
             if (patrolMovements.Length < 1)
                 return;
 
-            Vector3 direction = (patrolMovements[patrolIndex] - transform.position).normalized;
+            aIDestinationSetter.target = patrolMovements[patrolIndex].transform;
+            aILerp.SearchPath();
+            aILerp.speed = speed;
 
-            transform.position += direction * speed * Time.deltaTime;
-
-            CheckReachedPatrolPoint();
+            patrolCoroutine = StartCoroutine(CheckReachedPatrolPoint());
         }
 
-        void CheckReachedPatrolPoint()
+        IEnumerator CheckReachedPatrolPoint()
         {
-            //reached
-            if(Vector3.Distance(transform.position, patrolMovements[patrolIndex]) <= speed * Time.deltaTime + approx)
-            {
-                patrolIndex++;
 
-                //reset
-                if (patrolIndex >= patrolMovements.Length)
-                    patrolIndex = 0;
+            // sostituire con le info dal Path.
+            //reached
+            while (aILerp.pathPending || !aILerp.reachedEndOfPath)
+            {
+                yield return null;
             }
+
+            patrolIndex++;
+
+            //reset
+            if (patrolIndex >= patrolMovements.Length)
+                patrolIndex = 0;
+
+            patrolCoroutine = null;
         }
 
         #endregion
@@ -126,9 +169,14 @@ namespace LudumDare46
             //move only if there is a target
             if (target == null) return;
 
-            Vector3 direction = (target.position - transform.position).normalized;
+            // Sostituire il movimento verso il target con questa operazione:
+            aIDestinationSetter.target = target.transform;
+            aILerp.SearchPath();
+            aILerp.speed = speed;
 
-            transform.position += direction * speed * Time.deltaTime;
+            //Vector3 direction = (target.position - transform.position).normalized;
+
+            //transform.position += direction * speed * Time.deltaTime; // va sostituita andando a cambiare il parametro Speed del componente AILERP
         }
 
         void CheckValid()
@@ -162,7 +210,7 @@ namespace LudumDare46
 
         void FindRandomAndKill()
         {
-            if(target == null)
+            if (target == null)
             {
                 FindAlwaysRandom();
             }

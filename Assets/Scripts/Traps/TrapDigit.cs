@@ -4,21 +4,21 @@ using UnityEngine;
 
 namespace LudumDare46
 {
-    public class TrapDigit : Trap
+    public class TrapDigit : MonoBehaviour
     {
         [Header("Debug Digit")]
         [SerializeField] Keys[] keysToDisable = default;
 
         int keysIndex;
 
-        protected override void OnMouseDown()
+        protected void OnMouseDown()
         {
-            UpdateUI();
+            Debug.Log(keysToDisable[keysIndex]); 
         }
 
-        protected override void Update()
+        void Update()
         {
-            base.Update();
+            //base.Update();
 
             if (keysIndex >= keysToDisable.Length)
                 Debug.LogError("Come ci siamo arrivati a " + keysIndex + " numeri?");
@@ -34,17 +34,12 @@ namespace LudumDare46
                     Die();
                     return;
                 }
-
-                UpdateUI();
+                Debug.Log(keysToDisable[keysIndex]);
             }
+
         }
 
-        protected override void UpdateUI()
-        {
-            Debug.Log(keysToDisable[keysIndex]);
-        }
-
-        public void Set(int numberLetters, float speed)
+        public void Set(int numberLetters)
         {
             if (numberLetters == 0)
             {
@@ -61,7 +56,13 @@ namespace LudumDare46
                 keysToDisable[i] = (Keys)randomKey;
             }
 
-            this.speed = speed;
         }
+
+        protected void Die()
+        {
+            gameObject.SetActive(false);
+            keysIndex = 0;
+        }
+
     }
 }
