@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: df0b597b55ef567409ab21dc30b67fc5
+<<<<<<< HEAD:Assets/Appoggio.meta
+guid: 82f3586c2639db947b73ab6288faf810
+=======
+guid: 84b84bf7b2cbe8244b762e34df71887f
+>>>>>>> origin/animation:Assets/Animation.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
