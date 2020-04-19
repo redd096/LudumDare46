@@ -60,6 +60,24 @@ public class Bug : MonoBehaviour
         aIDestinationSetter.target = target;
     }
 
+    private void Update()
+    {
+//        FlipSprite();
+  //aILerp.
+    }
+
+    private void FlipSprite()
+    {
+        Vector2 direction = aILerp.destination - transform.position;
+        Debug.Log(direction);
+        Vector3 ls = transform.localScale;
+        if (direction.y < Mathf.Epsilon)
+        {
+            transform.localScale = new Vector3(-ls.x, ls.y, ls.z);
+        }
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
@@ -75,9 +93,10 @@ public class Bug : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void SetTarget(GameObject target)
+    public void SetTarget(Transform target)
     {
-        this.target = target.transform;
+        this.target = target;
+        aILerp.SearchPath();
     }
 
     public void SetSpeed(float antSpeed)

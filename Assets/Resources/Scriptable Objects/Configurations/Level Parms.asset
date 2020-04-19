@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ca83bdd7fb79a478f4aa32dedd4754, type: 3}
   m_Name: Level Parms
   m_EditorClassIdentifier: 
-  baseTime: 20
-  preparationTime: 5
+  baseTime: 50
+  preparationTime: 1
   antsToSave: 50
+  infiniteSpawning: 0

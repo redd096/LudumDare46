@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   antPrefab: {fileID: 7257593596619149913, guid: e571db0bad169b647afa23688bc7f03c,
     type: 3}
-  numberOfAnts: 2
+  numberOfAnts: 1
   timeBetweenSpawns: 1.5
   spawnRandomFactor: 0.5
   antSpeed: 10
