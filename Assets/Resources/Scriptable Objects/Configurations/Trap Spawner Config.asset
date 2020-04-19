@@ -21,7 +21,8 @@ MonoBehaviour:
   dinamicPrefab: {fileID: 6308278630957366686, guid: fd68a888d93bc7f43b1f6b58af250f70,
     type: 3}
   percentageAlivePrefab: 34
-  alivePrefab: {fileID: 0}
+  alivePrefab: {fileID: -4722625840416112434, guid: abbc09c468c783548aee10e26816b68c,
+    type: 3}
   statico:
   - percentage: 33
     numberLetters: 1
@@ -35,20 +36,20 @@ MonoBehaviour:
   dinamico:
   - percentage: 33
     numberClicks: 3
-    speed: 1
+    speed: 2
   - percentage: 33
     numberClicks: 5
-    speed: 1
+    speed: 2
   - percentage: 34
     numberClicks: 7
-    speed: 1
+    speed: 2
   vivo:
   - percentage: 33
     numberLetters: 1
-    speed: 1
+    speed: 2
   - percentage: 33
     numberLetters: 2
-    speed: 1
+    speed: 2
   - percentage: 34
     numberLetters: 3
-    speed: 1
+    speed: 2

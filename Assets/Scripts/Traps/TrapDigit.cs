@@ -11,8 +11,18 @@ namespace LudumDare46
 
         int keysIndex;
 
+        protected override void OnMouseDown()
+        {
+            UpdateUI();
+        }
+
         protected override void Update()
         {
+            base.Update();
+
+            if (keysIndex >= keysToDisable.Length)
+                Debug.LogError("Come ci siamo arrivati a " + keysIndex + " numeri?");
+
             //if pressed key
             if (Input.GetKeyDown(keysToDisable[keysIndex].ToString()))
             {
@@ -21,7 +31,7 @@ namespace LudumDare46
                 //check if dead
                 if (keysIndex >= keysToDisable.Length)
                 {
-                    Destroy(gameObject);
+                    Die();
                     return;
                 }
 
@@ -29,13 +39,19 @@ namespace LudumDare46
             }
         }
 
-        public void UpdateUI()
+        protected override void UpdateUI()
         {
             Debug.Log(keysToDisable[keysIndex]);
         }
 
         public void Set(int numberLetters, float speed)
         {
+            if (numberLetters == 0)
+            {
+                Debug.LogError("Perché non mi passi quante lettere devo premere? .-.");
+                numberLetters = 1;
+            }
+
             keysToDisable = new Keys[numberLetters];
             for (int i = 0; i < numberLetters; i++)
             {
@@ -46,8 +62,6 @@ namespace LudumDare46
             }
 
             this.speed = speed;
-
-            //TODO deve prendere 2 punti random da usare come patrolMovements
         }
     }
 }

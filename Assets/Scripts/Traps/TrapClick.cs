@@ -9,21 +9,21 @@ namespace LudumDare46
         [Header("Debug Click")]
         [SerializeField] int clickToRemove = 5;
 
-        void OnMouseDown()
+        protected override void OnMouseDown()
         {
             clickToRemove--;
 
             //check if dead
             if (clickToRemove <= 0)
             {
-                Destroy(gameObject);
+                Die();
                 return;
             }
 
             UpdateUI();
         }
 
-        public void UpdateUI()
+        protected override void UpdateUI()
         {
             Debug.Log(clickToRemove);
         }
@@ -33,7 +33,10 @@ namespace LudumDare46
             clickToRemove = numberClicks;
             this.speed = speed;
 
-            //TODO deve prendere 2 punti random da usare come patrolMovements
+            //two random points to move
+            patrolMovements = new Vector3[2];
+            patrolMovements[0] = Utils.GetRandomWalkableNode();
+            patrolMovements[1] = Utils.GetRandomWalkableNode();
         }
     }
 }

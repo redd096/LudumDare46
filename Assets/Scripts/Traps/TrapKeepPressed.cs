@@ -22,6 +22,11 @@ namespace LudumDare46
         bool keepingPressed;
         float lastTimePressed;
 
+        protected override void OnMouseDown()
+        {
+            UpdateUI();
+        }
+
         protected override void Update()
         {
             //if key up
@@ -46,7 +51,7 @@ namespace LudumDare46
                 //check if dead
                 if (keysIndex >= keysToDisable.Length)
                 {
-                    Destroy(gameObject);
+                    Die();
                     return;
                 }
 
@@ -54,13 +59,19 @@ namespace LudumDare46
             }
         }
 
-        public void UpdateUI()
+        protected override void UpdateUI()
         {
             Debug.Log(keysToDisable[keysIndex] + " - " + timeToKeepPressed);
         }
 
         public void Set(int numberLetters, float timeKeepPressed)
         {
+            if (numberLetters == 0)
+            {
+                Debug.LogError("Perché non mi passi quante lettere devo premere? .-.");
+                numberLetters = 1;
+            }
+
             keysToDisable = new Keys[numberLetters];
             for(int i = 0; i < numberLetters; i++)
             {
