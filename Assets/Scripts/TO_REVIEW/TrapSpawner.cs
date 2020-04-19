@@ -124,8 +124,7 @@ namespace LudumDare46
 
             GameObject trapInstantiated = vivoPool.Instantiate(trapSpawnerConfig.alivePrefab.gameObject);
             trapInstantiated.GetComponent<TrapDigit>().Set(numberLetters, speed);
-
-            //TODO dovrebbe settare anche la posizione random delle trappole sulla navmesh
+            
         }
 
         public void StartSpawning()
