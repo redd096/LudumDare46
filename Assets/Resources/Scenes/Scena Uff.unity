@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,15 +183,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (342)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -263,15 +258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (204)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -343,15 +333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (348)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -423,15 +408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (229)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -451,7 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27295733}
   m_Layer: 0
-  m_Name: Anthills
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,7 +451,7 @@ Transform:
   - {fileID: 1908516618}
   - {fileID: 414420775}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &28475124
 PrefabInstance:
@@ -535,15 +515,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (281)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -615,15 +590,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (238)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -695,15 +665,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (252)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -775,15 +740,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (237)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -855,15 +815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (295)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -935,15 +890,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (318)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1015,15 +965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (203)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1095,15 +1040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (263)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1175,15 +1115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (319)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1255,15 +1190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (279)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1335,15 +1265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (265)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1415,15 +1340,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (253)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1474,7 +1394,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 28}
+  m_Size: {x: 1, y: 28}
   m_EdgeRadius: 0
 --- !u!4 &215374861
 Transform:
@@ -1552,15 +1472,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (267)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1632,15 +1547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (212)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1650,50 +1560,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 242333119}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &257887377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 257887378}
-  - component: {fileID: 257887379}
-  m_Layer: 0
-  m_Name: Trap Spawner (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &257887378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257887377}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1601850739}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &257887379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257887377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea1c3f501c5e6f449bf7907a108bb0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trapSpawnerConfig: {fileID: 11400000, guid: 165e71678b7beef409bed86ac9176192, type: 2}
 --- !u!1 &328077681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,7 +1602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &368707867
 PrefabInstance:
@@ -1800,15 +1666,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (320)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1880,15 +1741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (270)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -1960,15 +1816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (317)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2040,15 +1891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (278)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2120,15 +1966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (244)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2155,7 +1996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &414420773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2169,6 +2010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfig: {fileID: 11400000, guid: 9f157680375e7214a9d032d547632126, type: 2}
+  targetDestination: {fileID: 1266884366}
+  pauseBetweenTargetHops: 2
   delayToStart: 10
   looping: 0
   spawn: 0
@@ -2298,15 +2141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (350)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2378,15 +2216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (211)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2521,7 +2354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &446851332
 PrefabInstance:
@@ -2585,15 +2418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (210)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2665,15 +2493,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (337)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2745,15 +2568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (287)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2825,15 +2643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (293)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -2962,15 +2775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (344)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3135,6 +2943,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493556252}
   m_CullTransparentMesh: 0
+--- !u!1001 &496148857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.31764704
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.41534021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905133, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905133, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: pauseBetweenHops
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905134, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Name
+      value: Target (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905134, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90, type: 3}
+--- !u!114 &526823330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8229492469629905133, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+    type: 3}
+  m_PrefabInstance: {fileID: 947949937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ac4b5cef5705d46bf375df8128785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &535600089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,15 +3198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (340)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3358,15 +3273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (345)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3438,15 +3348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (284)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3518,15 +3423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (347)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3598,15 +3498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (315)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3678,15 +3573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (321)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3758,15 +3648,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (208)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3838,15 +3723,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (333)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -3918,15 +3798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (216)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4090,15 +3965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (275)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4170,15 +4040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (304)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4250,15 +4115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (240)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4345,7 +4205,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &681877058
 RectTransform:
@@ -4429,15 +4289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (235)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4509,15 +4364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (264)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4589,15 +4439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (214)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4669,15 +4514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (236)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4749,15 +4589,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (303)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4793,7 +4628,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775035046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493556253}
@@ -4819,12 +4654,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+  m_Color: {r: 0.4528302, g: 0.40370238, b: 0.40370238, a: 0.83137256}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4904,15 +4739,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (294)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -4984,15 +4814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (291)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5064,15 +4889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (234)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5144,15 +4964,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (283)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5224,15 +5039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (260)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5304,15 +5114,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (297)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5384,15 +5189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (251)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5464,15 +5264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (351)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5544,15 +5339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (266)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5624,15 +5414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (249)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5761,15 +5546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (227)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -5779,50 +5559,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 876428066}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &888270777
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 888270778}
-  - component: {fileID: 888270779}
-  m_Layer: 0
-  m_Name: Trap Spawner (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &888270778
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888270777}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1601850739}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &888270779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888270777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea1c3f501c5e6f449bf7907a108bb0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trapSpawnerConfig: {fileID: 11400000, guid: 165e71678b7beef409bed86ac9176192, type: 2}
 --- !u!1001 &896553467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5885,15 +5621,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (301)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6021,15 +5752,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (225)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6101,15 +5827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (277)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6119,6 +5840,101 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 943203644}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &947949937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.031149892
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905132, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.27117378
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905133, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905134, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Name
+      value: Target (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905134, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229492469629905135, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90, type: 3}
 --- !u!1001 &985529705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6181,15 +5997,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (353)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6378,15 +6189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (257)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6458,15 +6264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (335)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6538,15 +6339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (331)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6684,15 +6480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (322)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6764,15 +6555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (289)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6844,15 +6630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (220)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -6924,15 +6705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (324)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7004,15 +6780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (314)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7032,7 +6803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090109461}
   m_Layer: 8
-  m_Name: Sassi
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7261,15 +7032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (218)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7341,15 +7107,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (247)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7421,15 +7182,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (273)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7501,15 +7257,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (272)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7581,15 +7332,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (217)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7661,15 +7407,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (298)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7741,15 +7482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (352)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7821,15 +7557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (207)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7901,15 +7632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (286)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -7981,15 +7707,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (285)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8032,7 +7753,7 @@ Transform:
   - {fileID: 874994488}
   - {fileID: 1090109461}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1230318347
 PrefabInstance:
@@ -8096,15 +7817,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (224)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8176,15 +7892,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (271)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8256,15 +7967,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (259)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8429,6 +8135,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253482391}
   m_CullTransparentMesh: 0
+--- !u!114 &1266884366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8229492469629905133, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90,
+    type: 3}
+  m_PrefabInstance: {fileID: 496148857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ac4b5cef5705d46bf375df8128785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1270104069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8491,15 +8209,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (221)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8571,15 +8284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (245)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8651,15 +8359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (330)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8731,15 +8434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (282)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8811,15 +8509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (276)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8891,15 +8584,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (206)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -8971,15 +8659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (268)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9051,15 +8734,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (343)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9131,15 +8809,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (256)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9211,15 +8884,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (349)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9291,15 +8959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (313)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9371,15 +9034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (250)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9451,15 +9109,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (292)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9531,15 +9184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (213)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9611,15 +9259,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (219)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9691,15 +9334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (233)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9771,15 +9409,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (280)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9851,15 +9484,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (300)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -9931,15 +9559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (226)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10011,15 +9634,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (262)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10091,15 +9709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (312)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10171,15 +9784,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (341)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10251,15 +9859,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (222)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10331,15 +9934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (223)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10411,15 +10009,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (209)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10491,15 +10084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (346)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10571,15 +10159,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (246)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10651,15 +10234,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (328)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10669,38 +10247,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1600914946}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1601850738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1601850739}
-  m_Layer: 0
-  m_Name: Hazards
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1601850739
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601850738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 257887378}
-  - {fileID: 888270778}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1611095470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10763,15 +10309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (231)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10781,6 +10322,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1611095470}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1686742965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149892, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149895, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: detailedGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257593596619149913, guid: e571db0bad169b647afa23688bc7f03c,
+        type: 3}
+      propertyPath: m_Name
+      value: Ant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e571db0bad169b647afa23688bc7f03c, type: 3}
 --- !u!1001 &1698567708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10843,15 +10458,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (325)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -10923,15 +10533,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (242)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11003,15 +10608,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (311)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11083,15 +10683,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (241)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11163,15 +10758,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (302)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11243,15 +10833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (316)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11323,15 +10908,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (228)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11403,15 +10983,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (254)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11517,7 +11092,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.065074
+  orthographic size: 14.066852
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11639,15 +11214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (243)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11719,15 +11289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (239)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11799,15 +11364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (258)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11879,15 +11439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (329)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -11959,15 +11514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (336)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12194,15 +11744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (255)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12274,15 +11819,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (269)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12354,15 +11894,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (299)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12434,15 +11969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (296)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12514,15 +12044,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (205)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12594,15 +12119,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (334)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12674,15 +12194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (327)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12709,7 +12224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1908516617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12787,6 +12302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfig: {fileID: 11400000, guid: fb54f20618e43004baff901d5d0e6efd, type: 2}
+  targetDestination: {fileID: 526823330}
+  pauseBetweenTargetHops: 1
   delayToStart: 0
   looping: 0
   spawn: 0
@@ -12845,7 +12362,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 28}
+  m_Size: {x: 1, y: 28}
   m_EdgeRadius: 0
 --- !u!1001 &1926982553
 PrefabInstance:
@@ -12909,15 +12426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (323)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -12989,15 +12501,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (339)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13069,15 +12576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (248)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13149,15 +12651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (288)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13229,15 +12726,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (326)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13309,15 +12801,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (338)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13389,15 +12876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (332)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13469,15 +12951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (232)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13549,15 +13026,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (230)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13629,15 +13101,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (261)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13709,15 +13176,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (290)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13789,15 +13251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (354)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13869,15 +13326,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (215)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -13949,15 +13401,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (274)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
@@ -14029,15 +13476,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5507456204491732414, guid: 29283826f0f474241bf1b5a88d5ffb57,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896665510952333383, guid: 29283826f0f474241bf1b5a88d5ffb57,
         type: 3}
       propertyPath: m_Name
-      value: Sasso
+      value: New Sprite (202)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29283826f0f474241bf1b5a88d5ffb57, type: 3}
