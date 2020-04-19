@@ -7,8 +7,9 @@ namespace LudumDare46
     public class Anthill : MonoBehaviour
     {
         [SerializeField] private SpawnerConfig waveConfig;
-        [SerializeField] private Target targetDestination = default;
-        [SerializeField] private float pauseBetweenTargetHops;
+        //[SerializeField] private Target targetDestination = default;
+        //[SerializeField] private float pauseBetweenTargetHops;
+
         /// <summary>
         /// Time in seconds after which the spawning starts
         /// </summary>
@@ -18,12 +19,13 @@ namespace LudumDare46
         [SerializeField] private bool looping = false;
         [SerializeField] private bool spawn = false;
 
-        List<Bug> antList = new List<Bug>();
+        //List<Bug> antList = new List<Bug>();
 
         Pooling pool = new Pooling();
 
         // cached reference
-        Coroutine spawnCoroutine, targetCoroutine;
+        Coroutine spawnCoroutine;
+        //Coroutine targetCoroutine;
 
 
         IEnumerator Start()
@@ -32,7 +34,7 @@ namespace LudumDare46
             {
                 yield return new WaitForSeconds(delayToStart);
                 spawnCoroutine = StartCoroutine(SpawnAllAntsInWave());
-                targetCoroutine = StartCoroutine(ChangeDestination());
+                //targetCoroutine = StartCoroutine(ChangeDestination());
                 yield return spawnCoroutine;
             }
             if (looping)
@@ -53,23 +55,17 @@ namespace LudumDare46
             var antPrefab = waveConfig.AntPrefab;
             var numberOfAnts = waveConfig.NumberOfAnts;
             var antSpeed = waveConfig.AntSpeed;
-            var target = targetDestination;
+            //var target = targetDestination;
             for (int antCount = 0; antCount < numberOfAnts; antCount++)
             {
                 var newAnt = pool.Instantiate(antPrefab, startPosition, Quaternion.identity);
                 var bugComponent = newAnt.GetComponent<Bug>();
-                antList.Add(bugComponent);
+                //antList.Add(bugComponent);
                 bugComponent.SetSpeed(antSpeed);
-                bugComponent.SetTarget(target.transform);
+                //bugComponent.SetTarget(target.transform);
                 newAnt.transform.parent = transform;
                 yield return new WaitForSeconds(timeBetweenSpawns + randomFactor);
             }
-        }
-
-        private IEnumerator ChangeDestination()
-        {
-            yield return new WaitForSeconds(pauseBetweenTargetHops);
-            targetDestination.Teleport();
         }
 
 
@@ -81,17 +77,17 @@ namespace LudumDare46
             {
                 StopCoroutine(spawnCoroutine);
             }
-            if (targetCoroutine != null)
-            {
-                StopCoroutine(targetCoroutine);
-            }
+            //if (targetCoroutine != null)
+            //{
+            //    StopCoroutine(targetCoroutine);
+            //}
         }
 
 
-        private void OnEnable()
-        {
-            targetDestination.OnTeleport += OnTargetTeleport;
-        }
+        //private void OnEnable()
+        //{
+        //    targetDestination.OnTeleport += OnTargetTeleport;
+        //}
 
         public void StartSpawning(bool loop)
         {
@@ -102,19 +98,19 @@ namespace LudumDare46
             StartCoroutine(Start());
         }
 
-        public void OnTargetTeleport(Target newTarget)
-        {
-            targetDestination = newTarget;
-            foreach (var bug in antList)
-            {
-                bug.SetTarget(targetDestination.transform);
-            }
-        }
+        //public void OnTargetTeleport(Target newTarget)
+        //{
+        //    targetDestination = newTarget;
+        //    foreach (var bug in antList)
+        //    {
+        //        bug.SetTarget(targetDestination.transform);
+        //    }
+        //}
 
-        private void OnDisable()
-        {
-            targetDestination.OnTeleport -= OnTargetTeleport;
-        }
+        //private void OnDisable()
+        //{
+        //    targetDestination.OnTeleport -= OnTargetTeleport;
+        //}
 
     }
 

@@ -1,106 +1,126 @@
 ﻿using System;
 using UnityEngine;
 using Pathfinding;
+using System.Collections;
 
-[RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
-public class Bug : MonoBehaviour
+namespace LudumDare46
 {
-
-    #region Properties
-    public int BugId
+    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+    public class Bug : MonoBehaviour
     {
-        get
+
+        #region Properties
+        public int BugId
         {
-            return bugId;
-        }
-        set
-        {
-            if (bugId == int.MinValue && value != int.MinValue)
+            get
             {
-                bugId = value;
+                return bugId;
             }
-            else
+            set
             {
-                Debug.LogError("Not allowed to change bugId");
+                if (bugId == int.MinValue && value != int.MinValue)
+                {
+                    bugId = value;
+                }
+                else
+                {
+                    Debug.LogError("Not allowed to change bugId");
+                }
             }
         }
-    }
 
-    public int MaterialId { get; private set; }
+        public int MaterialId { get; private set; }
 
-    #endregion
+        #endregion
 
-    #region Variables
-    private int bugId = int.MinValue;
-    private float speed;
-    private Transform target;
+        #region Variables
+        private int bugId = int.MinValue;
+        private float speed;
+        [SerializeField] private GameObject target;
+        [SerializeField] private float pauseBetweenTargetHops;
 
-    //[SerializeField] private Color targetColor;
+        //[SerializeField] private Color targetColor;
 
-    //// Cached Reference
-    //private SpriteRenderer sprite;
-    //private Color initialColor;
+        //// Cached Reference
+        //private SpriteRenderer sprite;
+        //private Color initialColor;
 
-    private AILerp aILerp;
-    private AIDestinationSetter aIDestinationSetter;
+        private AILerp aILerp;
+        private AIDestinationSetter aIDestinationSetter;
 
-    #endregion
+        #endregion
 
-    private void Awake()
-    {
-        //sprite = GetComponent<SpriteRenderer>();
-        //initialColor = sprite.color;
-        aILerp = GetComponent<AILerp>();
-        aIDestinationSetter = GetComponent<AIDestinationSetter>();
-    }
-
-    private void Start()
-    {
-        aILerp.speed = speed;
-        aIDestinationSetter.target = target;
-    }
-
-    private void Update()
-    {
-//        FlipSprite();
-  //aILerp.
-    }
-
-    private void FlipSprite()
-    {
-        Vector2 direction = aILerp.destination - transform.position;
-        Debug.Log(direction);
-        Vector3 ls = transform.localScale;
-        if (direction.y < Mathf.Epsilon)
+        private void Awake()
         {
-            transform.localScale = new Vector3(-ls.x, ls.y, ls.z);
+            //sprite = GetComponent<SpriteRenderer>();
+            //initialColor = sprite.color;
+            aILerp = GetComponent<AILerp>();
+            aIDestinationSetter = GetComponent<AIDestinationSetter>();
         }
-        
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+        private void Start()
         {
-            Destroy();
+            aILerp.speed = speed;
+            StartCoroutine(ChangeDestination());
+            //target.transform.position = Utils.GetRandomWalkableNode();
+            //aIDestinationSetter.target = target.transform;
         }
+
+        private void Update()
+        {
+            //        FlipSprite();
+            //aILerp.
+        }
+
+        private void FlipSprite()
+        {
+            Vector2 direction = aILerp.destination - transform.position;
+            Debug.Log(direction);
+            Vector3 ls = transform.localScale;
+            if (direction.y < Mathf.Epsilon)
+            {
+                transform.localScale = new Vector3(-ls.x, ls.y, ls.z);
+            }
+
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+            {
+                Destroy();
+            }
+        }
+
+        public void Destroy()
+        {
+            //initial color and set active false instead of destroy
+            //sprite.color = initialColor;
+            gameObject.SetActive(false);
+        }
+
+        public void SetTarget(Transform target)
+        {
+            this.target = target.gameObject;
+            aILerp.SearchPath();
+        }
+
+        public void SetSpeed(float antSpeed)
+        {
+            speed = antSpeed;
+        }
+
+        private IEnumerator ChangeDestination()
+        {
+            while(true)
+            {
+                target.transform.position = Utils.GetRandomWalkableNode();
+                aIDestinationSetter.target = target.transform;
+                aILerp.SearchPath();
+                yield return new WaitForSeconds(pauseBetweenTargetHops);
+            }
+        }
+
     }
 
-    public void Destroy()
-    {
-        //initial color and set active false instead of destroy
-        //sprite.color = initialColor;
-        gameObject.SetActive(false);
-    }
-
-    public void SetTarget(Transform target)
-    {
-        this.target = target;
-        aILerp.SearchPath();
-    }
-
-    public void SetSpeed(float antSpeed)
-    {
-        speed = antSpeed;
-    }
 }
