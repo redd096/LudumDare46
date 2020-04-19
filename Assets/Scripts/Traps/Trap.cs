@@ -15,13 +15,21 @@ namespace LudumDare46
     {
         [Header("Trap Movement")]
         [SerializeField] TypeOfTrap typeOfTrap = default;
-        [SerializeField] float speed = 1;
 
-        [Header("Dinamico")]
-        [SerializeField] Transform[] patrolMovements = default;
+        [Header("Debug Movement")]
+        [SerializeField] protected float speed = 1;
+        [SerializeField] protected Vector3[] patrolMovements = default;
         [SerializeField] float approx = 0.1f;
 
         int patrolIndex;
+
+        private void Start()
+        {
+            if (typeOfTrap == TypeOfTrap.dinamico && patrolMovements.Length < 2)
+            {
+                Debug.LogWarning("Ammo' che me li metti 2 punti dove andare?");
+            }
+        }
 
         protected virtual void Update()
         {
@@ -31,14 +39,12 @@ namespace LudumDare46
                 Vivo();
         }
 
-        void OnTriggerEnter(Collider other)
-        {
-            
-        }
-
         void Dinamico()
         {
-            Vector3 direction = (patrolMovements[patrolIndex].position - transform.position).normalized;
+            if (patrolMovements.Length < 1)
+                return;
+
+            Vector3 direction = (patrolMovements[patrolIndex] - transform.position).normalized;
 
             transform.position += direction * speed * Time.deltaTime;
 
@@ -48,7 +54,7 @@ namespace LudumDare46
         void CheckReachedPatrolPoint()
         {
             //reached
-            if(Vector3.Distance(transform.position, patrolMovements[patrolIndex].position) <= speed * Time.deltaTime + approx)
+            if(Vector3.Distance(transform.position, patrolMovements[patrolIndex]) <= speed * Time.deltaTime + approx)
             {
                 patrolIndex++;
 
@@ -60,7 +66,7 @@ namespace LudumDare46
 
         void Vivo()
         {
-            //trova la formica più vicina e inizia a inseguirla
+            //TODO trova la formica più vicina e inizia a inseguirla
             //una volta catturata cerca l'altra più vicina
 
             //OPPURE DEVE SEMPRE CERCARE QUELLA PIù VICINA? ANCHE SE HA GIà UN TARGET?

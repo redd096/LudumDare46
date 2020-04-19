@@ -23,6 +23,12 @@ namespace LudumDare46
                     anthill.StartSpawning(levelParms.Loop);
                 }
             }
+
+            var trapSpawners = FindObjectsOfType<TrapSpawner>();
+            for(int i = 0; i < trapSpawners.Length; i++)
+            {
+                trapSpawners[i].StartSpawning();
+            }
         }
 
         private void StopSpawners()
@@ -31,6 +37,12 @@ namespace LudumDare46
             foreach (Anthill anthill in anthHillsArray)
             {
                 anthill.StopSpawning();
+            }
+
+            var trapSpawners = FindObjectsOfType<TrapSpawner>();
+            for (int i = 0; i < trapSpawners.Length; i++)
+            {
+                trapSpawners[i].StopSpawning();
             }
         }
 

@@ -6,8 +6,8 @@ namespace LudumDare46
 {
     public class TrapClick : Trap
     {
-        [Header("Click")]
-        [SerializeField] float clickToRemove = 5;
+        [Header("Debug Click")]
+        [SerializeField] int clickToRemove = 5;
 
         void OnMouseDown()
         {
@@ -26,6 +26,14 @@ namespace LudumDare46
         public void UpdateUI()
         {
             Debug.Log(clickToRemove);
+        }
+
+        public void Set(int numberClicks, float speed)
+        {
+            clickToRemove = numberClicks;
+            this.speed = speed;
+
+            //TODO deve prendere 2 punti random da usare come patrolMovements
         }
     }
 }
