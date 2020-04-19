@@ -16,7 +16,7 @@ MonoBehaviour:
   speed: 1
   patrolMovements: []
   approx: 0.1
-  keysToDisable: 6100
+  keysToDisable: 61000000
   timeToKeepPressed: 3
 --- !u!1001 &8357592859894818839
 PrefabInstance:
@@ -98,7 +98,7 @@ PrefabInstance:
     - target: {fileID: 5126227264885362203, guid: 286b7038a214832449c4aea19b697440,
         type: 3}
       propertyPath: m_Name
-      value: Static KeepPressed
+      value: lv1 Static KeepPressed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286b7038a214832449c4aea19b697440, type: 3}

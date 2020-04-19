@@ -16,7 +16,7 @@ MonoBehaviour:
   speed: 1
   patrolMovements: []
   approx: 0.1
-  keysToDisable: 640065006600
+  keysToDisable: 640000006500000066000000
   timeToKeepPressed: 7
 --- !u!1001 &6401685609591335721
 PrefabInstance:
