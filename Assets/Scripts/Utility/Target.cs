@@ -1,23 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+namespace LudumDare46
 {
 
-    [SerializeField] private float pauseBetweenHops;
-
-    // Start is called before the first frame update
-    void Start()
+    public class Target : MonoBehaviour
     {
-        StartCoroutine(MoveCoroutine());
+
+        public Action<Target> OnTeleport { get; internal set; }
+
+        public void Teleport()
+        {
+            // Use the center of the node as the destination for example
+            var destination1 = Utils.GetRandomWalkableNode();
+
+            transform.position = destination1;
+
+            OnTeleport?.Invoke(this);
+
+        }
+
     }
 
-    private IEnumerator MoveCoroutine()
-    {
-        yield return new WaitForSeconds(pauseBetweenHops);
-
-
-
-    }
 }

@@ -2,89 +2,105 @@
 using UnityEngine;
 using Pathfinding;
 
-namespace LudumDare46
+[RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+public class Bug : MonoBehaviour
 {
-    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
-    public class Bug : MonoBehaviour
+
+    #region Properties
+    public int BugId
     {
-
-        #region Properties
-        public int BugId
+        get
         {
-            get
+            return bugId;
+        }
+        set
+        {
+            if (bugId == int.MinValue && value != int.MinValue)
             {
-                return bugId;
+                bugId = value;
             }
-            set
+            else
             {
-                if (bugId == int.MinValue && value != int.MinValue)
-                {
-                    bugId = value;
-                }
-                else
-                {
-                    Debug.LogError("Not allowed to change bugId");
-                }
+                Debug.LogError("Not allowed to change bugId");
             }
         }
+    }
 
-        public int MaterialId { get; private set; }
+    public int MaterialId { get; private set; }
 
-        #endregion
+    #endregion
 
-        #region Variables
-        private int bugId = int.MinValue;
-        private float speed;
-        private Transform target;
+    #region Variables
+    private int bugId = int.MinValue;
+    private float speed;
+    private Transform target;
 
-        //[SerializeField] private Color targetColor;
+    //[SerializeField] private Color targetColor;
 
-        //// Cached Reference
-        //private SpriteRenderer sprite;
-        //private Color initialColor;
+    //// Cached Reference
+    //private SpriteRenderer sprite;
+    //private Color initialColor;
 
-        private AILerp aILerp;
-        private AIDestinationSetter aIDestinationSetter;
+    private AILerp aILerp;
+    private AIDestinationSetter aIDestinationSetter;
 
-        #endregion
+    #endregion
 
-        private void Awake()
+    private void Awake()
+    {
+        //sprite = GetComponent<SpriteRenderer>();
+        //initialColor = sprite.color;
+        aILerp = GetComponent<AILerp>();
+        aIDestinationSetter = GetComponent<AIDestinationSetter>();
+    }
+
+    private void Start()
+    {
+        aILerp.speed = speed;
+        aIDestinationSetter.target = target;
+    }
+
+    private void Update()
+    {
+//        FlipSprite();
+  //aILerp.
+    }
+
+    private void FlipSprite()
+    {
+        Vector2 direction = aILerp.destination - transform.position;
+        Debug.Log(direction);
+        Vector3 ls = transform.localScale;
+        if (direction.y < Mathf.Epsilon)
         {
-            //sprite = GetComponent<SpriteRenderer>();
-            //initialColor = sprite.color;
-            aILerp = GetComponent<AILerp>();
-            aIDestinationSetter = GetComponent<AIDestinationSetter>();
+            transform.localScale = new Vector3(-ls.x, ls.y, ls.z);
         }
+        
+    }
 
-        private void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
         {
-            aILerp.speed = speed;
-            aIDestinationSetter.target = target;
+            Destroy();
         }
+    }
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            {
-                Destroy();
-            }
-        }
+    public void Destroy()
+    {
+        //initial color and set active false instead of destroy
+        //sprite.color = initialColor;
+        gameObject.SetActive(false);
+    }
 
-        public void Destroy()
-        {
-            //initial color and set active false instead of destroy
-            //sprite.color = initialColor;
-            gameObject.SetActive(false);
-        }
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
+        aILerp.SearchPath();
+    }
 
-        public void SetTarget(GameObject target)
-        {
-            this.target = target.transform;
-        }
-
-        public void SetSpeed(float antSpeed)
-        {
-            speed = antSpeed;
-        }
+    public void SetSpeed(float antSpeed)
+    {
+        speed = antSpeed;
     }
 }
