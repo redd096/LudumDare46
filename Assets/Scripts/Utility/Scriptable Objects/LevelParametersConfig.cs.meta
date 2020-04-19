@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 14ca83bdd7fb79a478f4aa32dedd4754
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - newEncounter: {fileID: 11400000, guid: 62f370e8f4993024587175906531b916, type: 2}
+  - encounterConsequences: {fileID: 11400000, guid: 155ac305065d6d24f832c2e59f9b8070,
+      type: 2}
+  - encounterOver: {fileID: 11400000, guid: cfd003a7bc3d2f04fa59b8af96a45311, type: 2}
+  - gameOverTriggeredEvent: {fileID: 11400000, guid: 7e81053b86b699f4596552c6986824e8,
+      type: 2}
+  - startMinigame: {fileID: 11400000, guid: 57e9181a820977340b06b33d813c37fe, type: 2}
+  - gameWonEvent: {fileID: 11400000, guid: 23dcd7337f964224b860522fe5f8005f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
