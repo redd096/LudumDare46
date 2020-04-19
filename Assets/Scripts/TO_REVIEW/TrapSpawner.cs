@@ -6,7 +6,7 @@ namespace LudumDare46
 {
     public class TrapSpawner : MonoBehaviour
     {
-        [SerializeField] TrapSpawnerConfig trapSpawnerConfig;
+        [SerializeField] TrapSpawnerConfig trapSpawnerConfig = default;
 
         Coroutine spawn;
 
