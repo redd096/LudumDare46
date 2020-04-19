@@ -35,7 +35,8 @@ namespace LudumDare46
                 yield return new WaitForSeconds(delayToStart);
                 spawnCoroutine = StartCoroutine(SpawnAllAntsInWave());
                 //targetCoroutine = StartCoroutine(ChangeDestination());
-                yield return spawnCoroutine;
+                while (spawnCoroutine != null)
+                    yield return null;
             }
             if (looping)
             {
@@ -58,7 +59,8 @@ namespace LudumDare46
             //var target = targetDestination;
             for (int antCount = 0; antCount < numberOfAnts; antCount++)
             {
-                var newAnt = pool.Instantiate(antPrefab, startPosition, Quaternion.identity);
+                //var newAnt = pool.Instantiate(antPrefab, startPosition, Quaternion.identity);
+                var newAnt = Instantiate(antPrefab, startPosition, Quaternion.identity);
                 var bugComponent = newAnt.GetComponent<Bug>();
                 //antList.Add(bugComponent);
                 bugComponent.SetSpeed(antSpeed);
@@ -66,6 +68,7 @@ namespace LudumDare46
                 newAnt.transform.parent = transform;
                 yield return new WaitForSeconds(timeBetweenSpawns + randomFactor);
             }
+            spawnCoroutine = null;
         }
 
 

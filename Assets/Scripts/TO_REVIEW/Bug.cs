@@ -88,7 +88,8 @@ namespace LudumDare46
         {
             if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
             {
-                Destroy();
+                //Destroy();
+                Destroy(gameObject);
             }
         }
 
@@ -112,7 +113,7 @@ namespace LudumDare46
 
         private IEnumerator ChangeDestination()
         {
-            while(true)
+            while (true)
             {
                 target.transform.position = Utils.GetRandomWalkableNode();
                 aIDestinationSetter.target = target.transform;
