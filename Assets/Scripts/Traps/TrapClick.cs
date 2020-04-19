@@ -6,26 +6,37 @@ namespace LudumDare46
 {
     public class TrapClick : Trap
     {
-        [Header("Click")]
-        [SerializeField] float clickToRemove = 5;
+        [Header("Debug Click")]
+        [SerializeField] int clickToRemove = 5;
 
-        void OnMouseDown()
+        protected override void OnMouseDown()
         {
             clickToRemove--;
 
             //check if dead
             if (clickToRemove <= 0)
             {
-                Destroy(gameObject);
+                Die();
                 return;
             }
 
             UpdateUI();
         }
 
-        public void UpdateUI()
+        protected override void UpdateUI()
         {
             Debug.Log(clickToRemove);
+        }
+
+        public void Set(int numberClicks, float speed)
+        {
+            clickToRemove = numberClicks;
+            this.speed = speed;
+
+            //two random points to move
+            patrolMovements = new Vector3[2];
+            patrolMovements[0] = Utils.GetRandomWalkableNode();
+            patrolMovements[1] = Utils.GetRandomWalkableNode();
         }
     }
 }
