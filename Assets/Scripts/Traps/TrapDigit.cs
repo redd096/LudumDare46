@@ -57,7 +57,6 @@ namespace LudumDare46
 
                 keysToDisable[i] = (Keys)randomKey;
             }
-
             instruction_text = GetComponentInChildren<TextMeshPro>();
             UpdateUI();
         }

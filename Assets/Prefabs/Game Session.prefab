@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelParms: {fileID: 11400000, guid: dae202114952741469f599b23c3624c0, type: 2}
-  levelTimer: {fileID: 0}
-  antSlider: {fileID: 0}
-  volumeButton: {fileID: 0}
   volumeOn: {fileID: 21300000, guid: dbf5d52388a94cf4198fa9ba977c220b, type: 3}
   volumeOff: {fileID: 21300000, guid: 8d4c9e35a95ddbe40b1918ca54573c58, type: 3}
+  menuMusic: {fileID: 8300000, guid: d399be3b6df416f41aed66d1769efd52, type: 3}
+  gameMusic: {fileID: 8300000, guid: 6a08bab4c5247df42bd2e0e3158d6196, type: 3}
