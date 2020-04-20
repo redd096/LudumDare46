@@ -105,11 +105,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7257593596619149892}
   - component: {fileID: 7257593596619149895}
-  - component: {fileID: 7257593596619149894}
   - component: {fileID: 7257593596619149893}
   - component: {fileID: 1054510217830185290}
   - component: {fileID: 1609797111589132085}
   - component: {fileID: 8729959025525062685}
+  - component: {fileID: 6534202129212660796}
   m_Layer: 0
   m_Name: Ant
   m_TagString: Untagged
@@ -160,29 +160,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &7257593596619149894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7257593596619149913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 2
-  repathRate: Infinity
-  canSearch: 1
-  canMove: 1
-  speed: 4
-  orientation: 1
-  enableRotation: 0
-  rotationSpeed: 30
-  interpolatePathSwitches: 1
-  switchPathInterpolationSpeed: 10
-  targetCompatibility: {fileID: 0}
 --- !u!114 &7257593596619149893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,16 +222,52 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7257593596619149913}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &6534202129212660796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257593596619149913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  radius: 0.5
+  height: 2
+  repathRate: Infinity
+  canSearch: 1
+  canMove: 1
+  maxSpeed: 1
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  orientation: 1
+  enableRotation: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 1

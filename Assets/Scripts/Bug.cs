@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace LudumDare46
 {
-    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+    [RequireComponent(typeof(AIPath), typeof(AIDestinationSetter))]
     public class Bug : MonoBehaviour
     {
 
@@ -39,7 +39,7 @@ namespace LudumDare46
         [SerializeField] private GameObject target;
         [SerializeField] private float pauseBetweenTargetHops;
 
-        private AILerp aILerp;
+        private AIPath aiPath;
         private AIDestinationSetter aIDestinationSetter;
 
         #endregion
@@ -48,17 +48,17 @@ namespace LudumDare46
         {
             //sprite = GetComponent<SpriteRenderer>();
             //initialColor = sprite.color;
-            aILerp = GetComponent<AILerp>();
+            aiPath = GetComponent<AIPath>();
             aIDestinationSetter = GetComponent<AIDestinationSetter>();
         }
 
         private void Start()
         {
-            aILerp.speed = speed;
+            aiPath.speed = speed;
             StartCoroutine(ChangeDestination());
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnCollisionEnter2D(Collision2D collision)
         {
             if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
             {
@@ -76,7 +76,7 @@ namespace LudumDare46
         public void SetTarget(Transform target)
         {
             this.target = target.gameObject;
-            aILerp.SearchPath();
+            aiPath.SearchPath();
         }
 
         public void SetSpeed(float antSpeed)
@@ -90,7 +90,7 @@ namespace LudumDare46
             {
                 target.transform.position = Utils.GetRandomWalkableNode();
                 aIDestinationSetter.target = target.transform;
-                aILerp.SearchPath();
+                aiPath.SearchPath();
                 yield return new WaitForSeconds(pauseBetweenTargetHops);
             }
         }
