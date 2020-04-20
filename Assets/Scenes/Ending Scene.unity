@@ -418,8 +418,8 @@ MonoBehaviour:
   starsSprites:
   - {fileID: 21300000, guid: e5f003ab7d3503f45aea2293378299fa, type: 3}
   - {fileID: 21300000, guid: b24208a3a2e6bff41a91dbeafa9e830e, type: 3}
-  score: 10000000
-  starCount: 0
+  score: 1780000
+  starCount: 3
 --- !u!1 &681877054
 GameObject:
   m_ObjectHideFlags: 0

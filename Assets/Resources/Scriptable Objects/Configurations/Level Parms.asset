@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Level Parms
   m_EditorClassIdentifier: 
   baseTime: 180
-  preparationTime: 1
-  antsToSpawn: 10
+  preparationTime: 3
+  antsToSpawn: 100
   antsToSave: 0.5
+  antsForSecondStar: 0.6
+  minimumTrapsForThirdStar: 25
   infiniteSpawning: 1

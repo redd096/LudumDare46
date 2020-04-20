@@ -14,18 +14,23 @@ namespace LudumDare46
         [SerializeField] private TextMeshProUGUI scoreText = default;
         [SerializeField] private Sprite[] starsSprites = default;
 
-        [SerializeField] private int score = 10000000;
+        [SerializeField] private float score = 10000000;
         [SerializeField] private int starCount = 3;
 
         // Start is called before the first frame update
         void Start()
         {
-            scoreText.text = string.Format("{0:#,#}", score);
+            if (GameManager.instance != null)
+            {
+                score = GameManager.instance.Score;
+                starCount = GameManager.instance.Stars;
+            }
+            scoreText.text = score.ToString("F0");
             foreach (var ir in stars)
             {
                 ir.sprite = starsSprites[0];
             }
-            if(starCount == 0)
+            if (starCount == 0)
             {
                 outcomeText.sprite = outcomeSprites[0];
             }

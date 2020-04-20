@@ -9,12 +9,12 @@ namespace LudumDare46
     {
         public static GameManager instance;
 
-        public int stars { get; private set; }
-        public float score { get; private set; }
+        public int Stars { get; private set; }
+        public float Score { get; private set; }
 
         [SerializeField] private LevelParametersConfig levelParms = default;
 
-        LevelTimer levelTimer;
+        [SerializeField] LevelTimer levelTimer;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
@@ -45,21 +45,29 @@ namespace LudumDare46
 
         void SetDefaults()
         {
-            levelTimer = FindObjectOfType<LevelTimer>();
+            if(levelTimer == null)
+            {
+                levelTimer = FindObjectOfType<LevelTimer>();
+            }
+            
 
             StartCoroutine(WaitEnterAndStartTimer());
 
             //reset
-            stars = 0;
-            score = 0;
+            Stars = 0;
+            Score = 0;
             currentAntsSpawned = 0;
             currentAntsKilled = 0;
             currentTrapsDisabled = 0;
+            DontDestroyOnLoad(this);
         }
 
         IEnumerator WaitEnterAndStartTimer()
         {
-            levelTimer.gameObject.SetActive(false);
+            if (levelTimer != null)
+            {
+                levelTimer.gameObject.SetActive(false);
+            }
 
             //wait enter
             while(!Input.GetKeyDown(KeyCode.Return))
@@ -125,8 +133,10 @@ namespace LudumDare46
             float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
             Debug.Log("Potentially Alive: " + potentiallyAlive);
             Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
+            
             if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
+                Debug.Log("Game Over");
                 GameOver(false);
             }
         }
@@ -140,7 +150,7 @@ namespace LudumDare46
             {
                 currentStars = 1;
 
-                if(remainedAnts >= levelParms.AntsForSecondStar)
+                if(remainedAnts/ levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
                 {
                     currentStars = 2;
 
@@ -151,8 +161,8 @@ namespace LudumDare46
                 }
             }
 
-            score = levelTimer.elapsedTime * remainedAnts * currentTrapsDisabled;
-            stars = currentStars;
+            Score = levelTimer.elapsedTime * remainedAnts * currentTrapsDisabled;
+            Stars = currentStars;
 
             LoadEndScene();
         }
