@@ -54,17 +54,23 @@ namespace LudumDare46
 
         private void Start()
         {
-            aiPath.speed = speed;
+            aiPath.maxSpeed = speed;
             StartCoroutine(ChangeDestination());
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            {
-                //Destroy();
-                Destroy(gameObject);
-            }
+            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+            //{
+                TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
+
+                //check if is active
+                if (trap && trap.isActive)
+                {
+                    //Destroy();
+                    Destroy(gameObject);
+                }
+            //}
         }
 
         public void Destroy()

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3652173323611441928}
   - component: {fileID: 9196023836216792813}
   m_Layer: 9
-  m_Name: Trap Graphics
+  m_Name: Trap_Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

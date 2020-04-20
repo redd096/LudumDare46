@@ -33,6 +33,8 @@ namespace LudumDare46
         [SerializeField] protected float speed = 1;
         [SerializeField] protected GameObject[] patrolMovements = default;
 
+        public bool isActive { get; private set; }
+
         int patrolIndex;
 
         Coroutine patrolCoroutine;
@@ -41,6 +43,9 @@ namespace LudumDare46
 
         private AIPath aiPath;
         private AIDestinationSetter aIDestinationSetter;
+
+        
+        SpriteRenderer trap_image;
 
         private void Awake()
         {
@@ -79,15 +84,42 @@ namespace LudumDare46
 
         protected virtual void Update()
         {
+            if (isActive == false) return;
+
             if (typeOfTrap == TypeOfTrap.dinamico)
                 Dinamico();
             else if (typeOfTrap == TypeOfTrap.vivo)
                 Vivo();
         }
 
-        public void Set(float speed)
-        {
+        public void Set(float timeToActivate, float speed = 0)
+        {            
+            trap_image = transform.Find("Trap_Graphics").GetComponent<SpriteRenderer>();
+
             this.speed = speed;
+
+            isActive = false;
+            StartCoroutine(ActiveTrap(timeToActivate));
+        }
+
+        IEnumerator ActiveTrap(float timeToActivate)
+        {
+            float time = Time.time + timeToActivate;
+
+            while(time > Time.time)
+            {
+                float delta = Mathf.Lerp(1, 0, 1 / (timeToActivate / (time - Time.time)));
+
+                //set image color
+                Color imageColor = trap_image.color;
+                imageColor.a = delta;
+
+                trap_image.color = imageColor;
+
+                yield return null;
+            }
+
+            isActive = true;
         }
 
 
