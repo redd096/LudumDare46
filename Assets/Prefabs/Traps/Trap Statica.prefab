@@ -271,6 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837de1dab49d7f249b59d3b74bad94b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnSound: {fileID: 8300000, guid: b782486eae4ff43429952437511c38f5, type: 3}
+  killSound: {fileID: 8300000, guid: 086710242e2d1a340bd0bbf0800e16c6, type: 3}
   keysToDisable: 
   timeToKeepPressed: 1
 --- !u!50 &4748313861615894839

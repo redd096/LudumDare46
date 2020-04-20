@@ -16,6 +16,7 @@ public class SplashScreen : MonoBehaviour
     [Min(0)]
     [SerializeField] float timeToFadeOut = 1;
     [SerializeField] string nextSceneName = "Main Scene";
+    [SerializeField] Sprite[] spritesToUse = default;
 
     void Start()
     {
@@ -24,39 +25,43 @@ public class SplashScreen : MonoBehaviour
 
     IEnumerator FadeInAndOut()
     {
-        //start alpha to 0
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
-
-        //wait before start fade in
-        yield return new WaitForSeconds(waitBeforeStartFadeIn);
-
-        //fade in
-        float delta = 0;
-        while (delta < 1)
+        foreach (var sprite in spritesToUse)
         {
-            delta = Fade(0, 1, delta, timeToFadeIn);
+            image.sprite = sprite;
+            //start alpha to 0
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
 
-            yield return null;
+            //wait before start fade in
+            yield return new WaitForSeconds(waitBeforeStartFadeIn);
+
+            //fade in
+            float delta = 0;
+            while (delta < 1)
+            {
+                delta = Fade(0, 1, delta, timeToFadeIn);
+
+                yield return null;
+            }
+
+            //final alpha to 1
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
+
+            //wait before start fade out
+            yield return new WaitForSeconds(waitBeforeStartFadeOut);
+
+            //fade out
+            delta = 0;
+            while (delta < 1)
+            {
+                delta = Fade(1, 0, delta, timeToFadeOut);
+
+                yield return null;
+            }
+
+            //final alpha to 0
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
+
         }
-
-        //final alpha to 1
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
-
-        //wait before start fade out
-        yield return new WaitForSeconds(waitBeforeStartFadeOut);
-
-        //fade out
-        delta = 0;
-        while (delta < 1)
-        {
-            delta = Fade(1, 0, delta, timeToFadeOut);
-
-            yield return null;
-        }
-
-        //final alpha to 0
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
-
         //load new scene
         SceneManager.LoadScene(nextSceneName);
     }

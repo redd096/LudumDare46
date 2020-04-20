@@ -18,9 +18,12 @@ namespace LudumDare46
 
         [SerializeField] Sprite volumeOn = default;
         [SerializeField] Sprite volumeOff = default;
+        [SerializeField] AudioClip menuMusic = default;
+        [SerializeField] AudioClip gameMusic = default;
 
         LevelTimer levelTimer;
         Slider antSlider;
+        AudioSource audioSource;
         Image volumeButton;
 
         private int currentAntsSpawned = 0;
@@ -81,6 +84,13 @@ namespace LudumDare46
 
         IEnumerator WaitEnterAndStartTimer()
         {
+            audioSource = FindObjectOfType<AudioSource>();
+            if(audioSource != null)
+            {
+                audioSource.clip = menuMusic;
+                audioSource.Play();
+            }
+            
             if (levelTimer != null)
             {
                 levelTimer.gameObject.SetActive(false);
@@ -91,10 +101,17 @@ namespace LudumDare46
             {
                 yield return null;
             }
-
             //set timer
             levelTimer.gameObject.SetActive(true);
             levelTimer.SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
+
+            yield return new WaitForSeconds(levelParms.LevelPreparationTime);
+            if (audioSource != null)
+            {
+                audioSource.clip = gameMusic;
+                audioSource.Play();
+            }
+
         }
 
         #endregion

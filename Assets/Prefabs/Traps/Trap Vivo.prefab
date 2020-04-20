@@ -367,6 +367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d9865a6caba7214d96cd403996c137d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnSound: {fileID: 8300000, guid: dd2b74b3b404d5c40b19c1cd4f7477b4, type: 3}
+  killSound: {fileID: 8300000, guid: 086710242e2d1a340bd0bbf0800e16c6, type: 3}
   keysToDisable: 
 --- !u!114 &2019178283128662366
 MonoBehaviour:

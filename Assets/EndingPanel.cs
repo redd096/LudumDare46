@@ -13,6 +13,7 @@ namespace LudumDare46
         [SerializeField] private Image[] stars = default;
         [SerializeField] private TextMeshProUGUI scoreText = default;
         [SerializeField] private Sprite[] starsSprites = default;
+        [SerializeField] private AudioClip[] audioClips = default;
 
         [SerializeField] private float score = 10000000;
         [SerializeField] private int starCount = 3;
@@ -33,10 +34,12 @@ namespace LudumDare46
             if (starCount == 0)
             {
                 outcomeText.sprite = outcomeSprites[0];
+                AudioSource.PlayClipAtPoint(audioClips[0], Camera.main.transform.position);
             }
             else
             {
                 outcomeText.sprite = outcomeSprites[1];
+                AudioSource.PlayClipAtPoint(audioClips[1], Camera.main.transform.position);
             }
 
             switch (starCount)
