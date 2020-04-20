@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 namespace LudumDare46
 {
@@ -11,10 +13,7 @@ namespace LudumDare46
 
         int keysIndex;
 
-        protected void OnMouseDown()
-        {
-            Debug.Log(keysToDisable[keysIndex]); 
-        }
+        TextMeshPro instruction_text;
 
         void Update()
         {
@@ -34,9 +33,15 @@ namespace LudumDare46
                     Die();
                     return;
                 }
-                Debug.Log(keysToDisable[keysIndex]);
+
+                UpdateUI();
             }
 
+        }
+
+        protected void UpdateUI()
+        {
+            instruction_text.text = keysToDisable[keysIndex].ToString();
         }
 
         public void Set(int numberLetters)
@@ -56,6 +61,8 @@ namespace LudumDare46
                 keysToDisable[i] = (Keys)randomKey;
             }
 
+            instruction_text = GetComponentInChildren<TextMeshPro>();
+            UpdateUI();
         }
 
         protected void Die()

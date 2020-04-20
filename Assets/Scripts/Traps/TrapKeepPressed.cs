@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 namespace LudumDare46
 {
@@ -22,10 +24,8 @@ namespace LudumDare46
         bool keepingPressed;
         float lastTimePressed;
 
-        protected void OnMouseDown()
-        {
-            UpdateUI();
-        }
+        SpriteRenderer instruction_image;
+        TextMeshPro instruction_text;
 
         protected void Update()
         {
@@ -33,20 +33,22 @@ namespace LudumDare46
             if(keepingPressed && Input.GetKeyUp(keysToDisable[keysIndex].ToString()))
             {
                 keepingPressed = false;
+                UpdateUI(true);
             }
             
             //if pressed key
             if (Input.GetKeyDown(keysToDisable[keysIndex].ToString()))
             {
-                Debug.Log("Disattivando....");
                 keepingPressed = true;
                 lastTimePressed = Time.time + timeToKeepPressed;
             }
 
+            if (keepingPressed)
+                UpdateUI();
+
             //if keep pressed for the time
             if(keepingPressed && Time.time > lastTimePressed)
             {
-                Debug.Log("MORIIIIIIII");
                 keepingPressed = false;
                 keysIndex++;
 
@@ -57,13 +59,28 @@ namespace LudumDare46
                     return;
                 }
 
-                UpdateUI();
+                UpdateUI(true);
             }
         }
 
-        protected void UpdateUI()
+        protected void UpdateUI(bool reset = false)
         {
-            Debug.Log(keysToDisable[keysIndex] + " - " + timeToKeepPressed);
+            instruction_text.text = keysToDisable[keysIndex].ToString();
+
+            //set delta for alpha (if reset, delta == 1)
+            float delta = reset ? 1 : 1 / (timeToKeepPressed / (lastTimePressed - Time.time));
+
+            //set image color
+            Color imageColor = instruction_image.color;
+            imageColor.a = delta;
+
+            instruction_image.color = imageColor;
+
+            //set text color
+            Color textColor = instruction_text.color;
+            textColor.a = delta;
+
+            instruction_text.color = textColor;
         }
 
         public void Set(int numberLetters, float timeKeepPressed)
@@ -84,6 +101,10 @@ namespace LudumDare46
             }
 
             timeToKeepPressed = timeKeepPressed;
+
+            instruction_image = transform.Find("Instruction_Image").GetComponent<SpriteRenderer>();
+            instruction_text = GetComponentInChildren<TextMeshPro>();
+            UpdateUI(true);
         }
 
         protected void Die()

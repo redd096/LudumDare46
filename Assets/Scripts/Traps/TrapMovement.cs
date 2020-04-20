@@ -86,11 +86,6 @@ namespace LudumDare46
                 Vivo();
         }
 
-        protected virtual void OnMouseDown()
-        {
-            Debug.Log("clicked");
-        }
-
         public void Set(float speed)
         {
             this.speed = speed;
