@@ -8,9 +8,9 @@ namespace LudumDare46
     [System.Serializable]
     public enum Keys
     {
-        q, w, e, r, t, y, u, i, o, p, 
-        a, s, d, f, g, h, j, k, l, 
-        z, x, c, v, b, n, m
+        q, w, e, r, t, y, u, i, o, p,
+        a, s, d, f, g, h, j, k, l,
+        z, x, c, v, b, n, m,
     }
 
     public class TrapKeepPressed : MonoBehaviour
@@ -64,7 +64,7 @@ namespace LudumDare46
 
         protected void UpdateUI(bool reset = false)
         {
-            instruction_text.text = keysToDisable[keysIndex].ToString();
+            instruction_text.text = keysToDisable[keysIndex].ToString().ToUpper();
 
             //set delta for alpha (if reset, delta == 1)
             float delta = reset ? 1 : 1 / (timeToKeepPressed / (lastTimePressed - Time.time));

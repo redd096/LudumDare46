@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace LudumDare46
 {
@@ -7,9 +8,28 @@ namespace LudumDare46
     {
         [SerializeField] private LevelParametersConfig levelParms = default;
 
+        LevelTimer levelTimer;
+
         void Awake()
         {
-            FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
+            levelTimer = FindObjectOfType<LevelTimer>();
+
+            StartCoroutine(WaitEnterAndStartTimer());
+        }
+
+        IEnumerator WaitEnterAndStartTimer()
+        {
+            levelTimer.gameObject.SetActive(false);
+
+            //wait enter
+            while(!Input.GetKeyDown(KeyCode.Return))
+            {
+                yield return null;
+            }
+
+            //set timer
+            levelTimer.gameObject.SetActive(true);
+            levelTimer.SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
         }
 
         private void StartSpawners()

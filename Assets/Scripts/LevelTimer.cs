@@ -11,6 +11,7 @@ namespace LudumDare46
         [Header("UI Elements")]
         [SerializeField] private TextMeshProUGUI countdownTimer = default;
         [SerializeField] private TextMeshProUGUI levelTimer = default;
+        [SerializeField] private GameObject waitEnterPanel = default;
         [SerializeField] private GameObject preparationTimePanel = default;
         //[Min(0f)]
         //[SerializeField] private float whenToChangeMusicSpeed = default;
@@ -83,6 +84,7 @@ namespace LudumDare46
             if (preparationTime <= 0)
             {
                 levelStarted = true;
+                waitEnterPanel.SetActive(false);
                 preparationTimePanel.SetActive(false);
                 levelTimer.gameObject.SetActive(true);
 
