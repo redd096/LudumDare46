@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LudumDare46
 {
@@ -9,8 +8,11 @@ namespace LudumDare46
         [Header("Level timer in seconds")]
         [SerializeField] [Min(0f)] private float baseTime = 20f;
         [SerializeField] [Min(0f)] private float preparationTime = 5f;
-        
-        [Header("How many Ants to save")]
+
+        [Header("Ants Spawned in the game")]
+        [SerializeField] [Min(0)] private int antsToSpawn = 500;
+
+        [Header("Percentage of how many Ants to save")]
         [SerializeField] [Range(0, 100)] private float antsToSave = 50f;
 
         /// <summary>

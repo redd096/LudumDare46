@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace LudumDare46
 {
-    public class TrapClick : Trap
+    public class TrapClick : MonoBehaviour
     {
         [Header("Debug Click")]
         [SerializeField] int clickToRemove = 5;
 
-        protected override void OnMouseDown()
+        protected void OnMouseDown()
         {
             clickToRemove--;
 
@@ -23,20 +23,19 @@ namespace LudumDare46
             UpdateUI();
         }
 
-        protected override void UpdateUI()
+        protected void UpdateUI()
         {
             Debug.Log(clickToRemove);
         }
 
-        public void Set(int numberClicks, float speed)
+        public void Set(int numberClicks)
         {
             clickToRemove = numberClicks;
-            this.speed = speed;
+        }
 
-            //two random points to move
-            patrolMovements = new Vector3[2];
-            patrolMovements[0] = Utils.GetRandomWalkableNode();
-            patrolMovements[1] = Utils.GetRandomWalkableNode();
+        protected void Die()
+        {
+            gameObject.SetActive(false);
         }
     }
 }
