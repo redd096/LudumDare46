@@ -31,7 +31,7 @@ namespace LudumDare46
         protected virtual void Die()
         {
             gameObject.SetActive(false);
-            AudioSource.PlayClipAtPoint(killSound, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(killSound, Camera.main.transform.position, 0.5f);
 
             GameManager.instance.TrapDisabled();
         }
