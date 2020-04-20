@@ -10,9 +10,11 @@ namespace LudumDare46
 
         public Action OnAntSpawned;
         public Action OnAntKilled;
+        public Action OnTrapDisabled;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
+        private int currentTrapsDisabled = 0;
 
         private void AntKilled()
         {
@@ -23,8 +25,10 @@ namespace LudumDare46
 
         private void CheckGameOver()
         {
-            var potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
-            if (potentiallyAlive / levelParms.AntsToSpawn > levelParms.AntsToSave)
+            float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
+            Debug.Log("Potentially Alive: " + potentiallyAlive);
+            Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
+            if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
                 Debug.Log("Mori");
             }
@@ -34,13 +38,25 @@ namespace LudumDare46
         {
             currentAntsSpawned++;
             Debug.Log(string.Format("Ant Spawned - {0} ants alive, {1} to spawn", currentAntsSpawned, levelParms.AntsToSpawn - currentAntsSpawned));
+            if (currentAntsSpawned >= levelParms.AntsToSpawn)
+            {
+                StopAnthills();
+            }
         }
+
+        private void TrapDisabled()
+        {
+            currentTrapsDisabled++;
+            Debug.Log("Trap Disabled!");
+        }
+
 
         void Awake()
         {
             FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
             OnAntSpawned += AntSpawned;
             OnAntKilled += AntKilled;
+            OnTrapDisabled += TrapDisabled;
         }
 
         private void StartSpawners()
@@ -73,6 +89,15 @@ namespace LudumDare46
             for (int i = 0; i < trapSpawners.Length; i++)
             {
                 trapSpawners[i].StopSpawning();
+            }
+        }
+
+        private void StopAnthills()
+        {
+            var anthHillsArray = FindObjectsOfType<Anthill>();
+            foreach (Anthill anthill in anthHillsArray)
+            {
+                anthill.StopSpawning();
             }
         }
 

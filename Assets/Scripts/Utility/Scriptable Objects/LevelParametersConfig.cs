@@ -13,7 +13,7 @@ namespace LudumDare46
         [SerializeField] [Min(0)] private int antsToSpawn = 500;
 
         [Header("Percentage of how many Ants to save")]
-        [SerializeField] [Range(0, 100)] private float antsToSave = 50f;
+        [SerializeField] [Range(0f, 1f)] private float antsToSave = .5f;
 
         /// <summary>
         /// Are the anthills constantly spawning?
