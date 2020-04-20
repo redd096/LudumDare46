@@ -7,7 +7,8 @@ namespace LudumDare46
 
     public class GameManager : MonoBehaviour
     {
-        public static GameManager instance;
+        public static GameManager instance { get; private set; }
+        public static bool pause { get; private set; }
 
         public int Stars { get; private set; }
         public float Score { get; private set; }
@@ -33,6 +34,7 @@ namespace LudumDare46
             {
                 //if no instance, this is the instance and set default values
                 instance = this;
+                DontDestroyOnLoad(this);
                 SetDefaults();
             }
             else
@@ -45,11 +47,11 @@ namespace LudumDare46
 
         void SetDefaults()
         {
-            if(levelTimer == null)
+            if (levelTimer == null)
             {
                 levelTimer = FindObjectOfType<LevelTimer>();
             }
-            
+
 
             StartCoroutine(WaitEnterAndStartTimer());
 
@@ -59,7 +61,8 @@ namespace LudumDare46
             currentAntsSpawned = 0;
             currentAntsKilled = 0;
             currentTrapsDisabled = 0;
-            DontDestroyOnLoad(this);
+
+            Resume();
         }
 
         IEnumerator WaitEnterAndStartTimer()
@@ -70,7 +73,7 @@ namespace LudumDare46
             }
 
             //wait enter
-            while(!Input.GetKeyDown(KeyCode.Return))
+            while (!Input.GetKeyDown(KeyCode.Return))
             {
                 yield return null;
             }
@@ -96,7 +99,7 @@ namespace LudumDare46
             }
 
             var trapSpawners = FindObjectsOfType<TrapSpawner>();
-            for(int i = 0; i < trapSpawners.Length; i++)
+            for (int i = 0; i < trapSpawners.Length; i++)
             {
                 trapSpawners[i].StartSpawning();
             }
@@ -133,7 +136,7 @@ namespace LudumDare46
             float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
             Debug.Log("Potentially Alive: " + potentiallyAlive);
             Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
-            
+
             if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
                 Debug.Log("Game Over");
@@ -150,11 +153,11 @@ namespace LudumDare46
             {
                 currentStars = 1;
 
-                if(remainedAnts/ levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
+                if (remainedAnts / levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
                 {
                     currentStars = 2;
 
-                    if(currentTrapsDisabled >= levelParms.MinimumTrapsForThirdStar)
+                    if (currentTrapsDisabled >= levelParms.MinimumTrapsForThirdStar)
                     {
                         currentStars = 3;
                     }
@@ -173,6 +176,38 @@ namespace LudumDare46
         }
 
         #region public API
+
+        #region scene management
+
+        public void RestartGame()
+        {
+            SceneManager.LoadScene("Main Scene");
+        }
+
+        public void Quit()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        }
+
+        public void Pause()
+        {
+            pause = true;
+
+            Time.timeScale = 0;
+        }
+
+        public void Resume()
+        {
+            pause = false;
+
+            Time.timeScale = 1;
+        }
+
+        #endregion
 
         public void TriggeredTimerFinish()
         {
