@@ -311,10 +311,10 @@ GameObject:
   - component: {fileID: 4788082413310213304}
   - component: {fileID: 1129552293530937593}
   - component: {fileID: 2019178283128662366}
-  - component: {fileID: -654731423923220444}
   - component: {fileID: 1497267322746755531}
   - component: {fileID: -6625058037427317305}
   - component: {fileID: -3798188636755962667}
+  - component: {fileID: 7332472078493555553}
   m_Layer: 9
   m_Name: Trap Vivo
   m_TagString: Untagged
@@ -354,7 +354,6 @@ MonoBehaviour:
   typeOfVivo: 0
   speed: 1
   patrolMovements: []
-  approx: 0.1
 --- !u!114 &1129552293530937593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,29 +395,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &-654731423923220444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7044636297575685525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 2
-  repathRate: Infinity
-  canSearch: 1
-  canMove: 1
-  speed: 4
-  orientation: 1
-  enableRotation: 0
-  rotationSpeed: 30
-  interpolatePathSwitches: 1
-  switchPathInterpolationSpeed: 10
-  targetCompatibility: {fileID: 0}
 --- !u!114 &1497267322746755531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +456,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7332472078493555553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7044636297575685525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  radius: 1.3
+  height: 1.3
+  repathRate: 0.5
+  canSearch: 1
+  canMove: 1
+  maxSpeed: 1
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  orientation: 1
+  enableRotation: 1
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
 --- !u!1 &7404969601899497059
 GameObject:
   m_ObjectHideFlags: 0

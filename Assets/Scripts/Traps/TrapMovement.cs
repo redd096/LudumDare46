@@ -20,7 +20,7 @@ namespace LudumDare46
         findRandomAndKill,
     }
 
-    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+    [RequireComponent(typeof(AIPath), typeof(AIDestinationSetter))]
     public class TrapMovement : MonoBehaviour
     {
         [Header("Trap Movement")]
@@ -32,7 +32,6 @@ namespace LudumDare46
         [Header("Debug Movement")]
         [SerializeField] protected float speed = 1;
         [SerializeField] protected GameObject[] patrolMovements = default;
-        [SerializeField] float approx = 0.1f;
 
         int patrolIndex;
 
