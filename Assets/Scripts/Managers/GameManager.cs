@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace LudumDare46
 {
@@ -7,9 +8,33 @@ namespace LudumDare46
     {
         [SerializeField] private LevelParametersConfig levelParms = default;
 
+        public Action OnAntSpawned;
+        public Action OnAntKilled;
+
+        private int currentAntsSpawned = 0;
+        private int currentAntsKilled = 0;
+
+        private void AntKilled()
+        {
+            currentAntsKilled++;
+            CheckGameOver();
+        }
+
+        private void CheckGameOver()
+        {
+            //if(levelParms.AntsToSpawn - currentAntsSpawned  levelParms.AntsToSave ;
+        }
+
+        private void AntSpawned()
+        {
+            currentAntsSpawned++;
+        }
+
         void Awake()
         {
             FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
+            OnAntSpawned = AntSpawned;
+            OnAntKilled = AntKilled;
         }
 
 
@@ -49,6 +74,7 @@ namespace LudumDare46
         public void TriggeredTimerFinish()
         {
             StopSpawners();
+
         }
 
         public void TriggeredTimerStart()

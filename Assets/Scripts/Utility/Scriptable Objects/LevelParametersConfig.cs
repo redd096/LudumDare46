@@ -21,10 +21,12 @@ namespace LudumDare46
         [SerializeField] private bool infiniteSpawning = false;
 
         public float LevelTime { get { return baseTime; } }
+       
         public float LevelPreparationTime { get { return preparationTime; } }
 
         public bool Loop { get { return infiniteSpawning; } }
-
+        public int AntsToSpawn { get { return antsToSpawn; } }
+        public float AntsToSave { get { return antsToSave; } }
     }
 
 }

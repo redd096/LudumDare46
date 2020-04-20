@@ -63,6 +63,7 @@ namespace LudumDare46
             {
                 //Destroy();
                 Destroy(gameObject);
+                
             }
         }
 
@@ -92,6 +93,16 @@ namespace LudumDare46
                 aILerp.SearchPath();
                 yield return new WaitForSeconds(pauseBetweenTargetHops);
             }
+        }
+
+        private void OnEnable()
+        {
+            FindObjectOfType<GameManager>().OnAntSpawned();
+        }
+
+        private void OnDisable()
+        {
+            FindObjectOfType<GameManager>().OnAntKilled();
         }
 
     }
