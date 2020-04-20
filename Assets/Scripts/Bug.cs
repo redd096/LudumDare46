@@ -72,6 +72,22 @@ namespace LudumDare46
             //}
         }
 
+        private void OnTriggerEnter2D(Collision2D collision)
+        {
+            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+            //{
+            TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
+
+            //check if is active
+            if (trap && trap.isActive)
+            {
+                //Destroy();
+                Destroy(gameObject);
+            }
+            //}
+        }
+
+
         public void Destroy()
         {
             // set active false instead of destroy
