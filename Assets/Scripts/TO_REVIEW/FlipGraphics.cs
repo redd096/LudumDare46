@@ -22,6 +22,8 @@ namespace LudumDare46
         // Update is called once per frame
         void Update()
         {
+            if(setter.target == null) { return; }
+
             if ((setter.target.position.x - transform.position.x) > Mathf.Epsilon)
             {
                 spriteRenderer.flipX = true;
