@@ -100,7 +100,7 @@ namespace LudumDare46
             FindObjectOfType<GameManager>().OnAntSpawned();
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             FindObjectOfType<GameManager>().OnAntKilled();
         }

@@ -16,6 +16,8 @@ namespace LudumDare46
 
         IEnumerator Spawn()
         {
+            //wait between spawns
+            yield return new WaitForSeconds(Random.Range(trapSpawnerConfig.minDelayBetweenSpawns, trapSpawnerConfig.maxDelayBetweenSpawns));
             //select prefab
             float randomPrefab = Random.Range(0f, 100f);
             if(randomPrefab <= trapSpawnerConfig.percentageStaticPrefab)
@@ -31,8 +33,6 @@ namespace LudumDare46
                 Vivo();
             }
 
-            //wait between spawns
-            yield return new WaitForSeconds(Random.Range(trapSpawnerConfig.minDelayBetweenSpawns, trapSpawnerConfig.maxDelayBetweenSpawns));
             spawn = StartCoroutine(Spawn());
         }
 

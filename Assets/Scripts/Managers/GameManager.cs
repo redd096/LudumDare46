@@ -17,24 +17,30 @@ namespace LudumDare46
         private void AntKilled()
         {
             currentAntsKilled++;
+            Debug.Log(string.Format("Ant Killed - {0} ants still alive, {1} to spawn", currentAntsSpawned - currentAntsKilled, levelParms.AntsToSpawn - currentAntsSpawned));
             CheckGameOver();
         }
 
         private void CheckGameOver()
         {
-            //if(levelParms.AntsToSpawn - currentAntsSpawned  levelParms.AntsToSave ;
+            var potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
+            if (potentiallyAlive / levelParms.AntsToSpawn > levelParms.AntsToSave)
+            {
+                Debug.Log("Mori");
+            }
         }
 
         private void AntSpawned()
         {
             currentAntsSpawned++;
+            Debug.Log(string.Format("Ant Spawned - {0} ants alive, {1} to spawn", currentAntsSpawned, levelParms.AntsToSpawn - currentAntsSpawned));
         }
 
         void Awake()
         {
             FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
-            OnAntSpawned = AntSpawned;
-            OnAntKilled = AntKilled;
+            OnAntSpawned += AntSpawned;
+            OnAntKilled += AntKilled;
         }
 
 

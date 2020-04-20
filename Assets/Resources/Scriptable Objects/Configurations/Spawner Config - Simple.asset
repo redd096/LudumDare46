@@ -15,6 +15,6 @@ MonoBehaviour:
   antPrefab: {fileID: 7257593596619149913, guid: e571db0bad169b647afa23688bc7f03c,
     type: 3}
   numberOfAnts: 3
-  timeBetweenSpawns: 1.5
-  spawnRandomFactor: 0.5
+  timeBetweenSpawns: 2
+  spawnRandomFactor: 1
   antSpeed: 2

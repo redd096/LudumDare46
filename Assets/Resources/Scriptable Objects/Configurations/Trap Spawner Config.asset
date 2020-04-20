@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466552aab61c89a429fec4ad26544a77, type: 3}
   m_Name: Trap Spawner Config
   m_EditorClassIdentifier: 
-  minDelayBetweenSpawns: 3
-  maxDelayBetweenSpawns: 5
+  minDelayBetweenSpawns: 10
+  maxDelayBetweenSpawns: 20
   percentageStaticPrefab: 34
   staticPrefab: {fileID: 5751853092684875163, guid: fda30966ecb22fa4fb9be585d33b0e59,
     type: 3}
