@@ -18,6 +18,7 @@ namespace LudumDare46
         private void Awake()
         {
             optionsController = GetComponentInParent<OptionsController>();
+            imageRenderer = GetComponent<Image>();
         }
 
         private void OnEnable()

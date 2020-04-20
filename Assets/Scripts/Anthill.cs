@@ -16,49 +16,32 @@ namespace LudumDare46
         [SerializeField] private float delayToStart = 0f;
 
         [Header("Testing stuff - Values are controlled by the Level Manager")]
-        [SerializeField] private bool looping = false;
+        //[SerializeField] private bool looping = false;
         [SerializeField] private bool spawn = false;
 
         //List<Bug> antList = new List<Bug>();
 
-        Pooling pool = new Pooling();
+        //Pooling pool = new Pooling();
 
         // cached reference
-        Coroutine spawnCoroutine;
+        //Coroutine spawnCoroutine;
         //Coroutine targetCoroutine;
 
 
-        IEnumerator Start()
+        IEnumerator StartSpawn()
         {
+            yield return new WaitForSeconds(delayToStart);
             while (spawn)
             {
-                yield return new WaitForSeconds(delayToStart);
-                spawnCoroutine = StartCoroutine(SpawnAllAntsInWave());
-                //targetCoroutine = StartCoroutine(ChangeDestination());
-                while (spawnCoroutine != null)
-                    yield return null;
-            }
-            if (looping)
-            {
-                StartCoroutine(Start());
-            }
-        }
+                Vector3 startPosition;
+                float timeBetweenSpawns;
+                float randomFactor;
 
-        IEnumerator SpawnAllAntsInWave()
-        {
-            Vector3 startPosition;
-            float timeBetweenSpawns;
-            float randomFactor;
-
-            startPosition = transform.position;
-            timeBetweenSpawns = waveConfig.TimeBetweenSpawns;
-            randomFactor = Random.Range(-waveConfig.SpawnRandomFactor, waveConfig.SpawnRandomFactor);
-            var antPrefab = waveConfig.AntPrefab;
-            var numberOfAnts = waveConfig.NumberOfAnts;
-            var antSpeed = waveConfig.AntSpeed;
-            //var target = targetDestination;
-            for (int antCount = 0; antCount < numberOfAnts; antCount++)
-            {
+                startPosition = transform.position;
+                timeBetweenSpawns = waveConfig.TimeBetweenSpawns;
+                randomFactor = Random.Range(-waveConfig.SpawnRandomFactor, waveConfig.SpawnRandomFactor);
+                var antPrefab = waveConfig.AntPrefab;
+                var antSpeed = waveConfig.AntSpeed;
                 //var newAnt = pool.Instantiate(antPrefab, startPosition, Quaternion.identity);
                 var newAnt = Instantiate(antPrefab, startPosition, Quaternion.identity);
                 var bugComponent = newAnt.GetComponent<Bug>();
@@ -67,19 +50,19 @@ namespace LudumDare46
                 //bugComponent.SetTarget(target.transform);
                 newAnt.transform.parent = transform;
                 yield return new WaitForSeconds(timeBetweenSpawns + randomFactor);
+
             }
-            spawnCoroutine = null;
         }
 
 
         public void StopSpawning()
         {
-            looping = false;
+            //looping = false;
             spawn = false;
-            if (spawnCoroutine != null)
-            {
-                StopCoroutine(spawnCoroutine);
-            }
+            //if (spawnCoroutine != null)
+            //{
+            //    StopCoroutine(spawnCoroutine);
+            //}
             //if (targetCoroutine != null)
             //{
             //    StopCoroutine(targetCoroutine);
@@ -94,11 +77,11 @@ namespace LudumDare46
 
         public void StartSpawning(bool loop)
         {
-            looping = loop;
+            //looping = loop;
             spawn = true;
 
             //start spawn
-            StartCoroutine(Start());
+            StartCoroutine(StartSpawn());
         }
 
         //public void OnTargetTeleport(Target newTarget)

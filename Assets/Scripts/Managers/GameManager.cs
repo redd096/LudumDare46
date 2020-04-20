@@ -1,16 +1,88 @@
 ﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace LudumDare46
 {
 
     public class GameManager : MonoBehaviour
     {
+        public static GameManager instance;
+
+        public int Stars { get; private set; }
+        public float Score { get; private set; }
+
         [SerializeField] private LevelParametersConfig levelParms = default;
+
+        [SerializeField] LevelTimer levelTimer;
+
+        private int currentAntsSpawned = 0;
+        private int currentAntsKilled = 0;
+        private int currentTrapsDisabled = 0;
+
+        #region start
 
         void Awake()
         {
-            FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
+            CheckInstance();
         }
+
+        void CheckInstance()
+        {
+            if (instance == null)
+            {
+                //if no instance, this is the instance and set default values
+                instance = this;
+                SetDefaults();
+            }
+            else
+            {
+                //if there is an instance, set its default values and destroy this one
+                instance.SetDefaults();
+                Destroy(this.gameObject);
+            }
+        }
+
+        void SetDefaults()
+        {
+            if(levelTimer == null)
+            {
+                levelTimer = FindObjectOfType<LevelTimer>();
+            }
+            
+
+            StartCoroutine(WaitEnterAndStartTimer());
+
+            //reset
+            Stars = 0;
+            Score = 0;
+            currentAntsSpawned = 0;
+            currentAntsKilled = 0;
+            currentTrapsDisabled = 0;
+            DontDestroyOnLoad(this);
+        }
+
+        IEnumerator WaitEnterAndStartTimer()
+        {
+            if (levelTimer != null)
+            {
+                levelTimer.gameObject.SetActive(false);
+            }
+
+            //wait enter
+            while(!Input.GetKeyDown(KeyCode.Return))
+            {
+                yield return null;
+            }
+
+            //set timer
+            levelTimer.gameObject.SetActive(true);
+            levelTimer.SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
+        }
+
+        #endregion
+
+        #region spawner
 
         private void StartSpawners()
         {
@@ -45,15 +117,103 @@ namespace LudumDare46
             }
         }
 
+        private void StopAnthills()
+        {
+            var anthHillsArray = FindObjectsOfType<Anthill>();
+            foreach (Anthill anthill in anthHillsArray)
+            {
+                anthill.StopSpawning();
+            }
+        }
+
+        #endregion
+
+        private void CheckGameOver()
+        {
+            float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
+            Debug.Log("Potentially Alive: " + potentiallyAlive);
+            Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
+            
+            if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
+            {
+                Debug.Log("Game Over");
+                GameOver(false);
+            }
+        }
+
+        void GameOver(bool win)
+        {
+            int remainedAnts = currentAntsSpawned - currentAntsKilled;
+            int currentStars = 0;
+
+            if (win)
+            {
+                currentStars = 1;
+
+                if(remainedAnts/ levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
+                {
+                    currentStars = 2;
+
+                    if(currentTrapsDisabled >= levelParms.MinimumTrapsForThirdStar)
+                    {
+                        currentStars = 3;
+                    }
+                }
+            }
+
+            Score = levelTimer.elapsedTime * remainedAnts * currentTrapsDisabled;
+            Stars = currentStars;
+
+            LoadEndScene();
+        }
+
+        void LoadEndScene()
+        {
+            SceneManager.LoadScene("Ending Scene");
+        }
+
+        #region public API
+
         public void TriggeredTimerFinish()
         {
             StopSpawners();
+
+            GameOver(true);
         }
 
         public void TriggeredTimerStart()
         {
             StartSpawners();
         }
+
+
+
+        public void AntKilled()
+        {
+            currentAntsKilled++;
+            Debug.Log(string.Format("Ant Killed - {0} ants still alive, {1} to spawn", currentAntsSpawned - currentAntsKilled, levelParms.AntsToSpawn - currentAntsSpawned));
+            
+            CheckGameOver();
+        }
+
+        public void AntSpawned()
+        {
+            currentAntsSpawned++;
+            Debug.Log(string.Format("Ant Spawned - {0} ants alive, {1} to spawn", currentAntsSpawned, levelParms.AntsToSpawn - currentAntsSpawned));
+
+            if (currentAntsSpawned >= levelParms.AntsToSpawn)
+            {
+                StopAnthills();
+            }
+        }
+
+        public void TrapDisabled()
+        {
+            currentTrapsDisabled++;
+            Debug.Log("Trap Disabled!");
+        }
+
+        #endregion
     }
 
 }

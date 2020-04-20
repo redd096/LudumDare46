@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466552aab61c89a429fec4ad26544a77, type: 3}
   m_Name: Trap Spawner Config
   m_EditorClassIdentifier: 
-  minDelayBetweenSpawns: 3
+  minDelayBetweenSpawns: 2
   maxDelayBetweenSpawns: 5
-  timeBeforeActivate: 5
-  percentageStaticPrefab: 0
+  timeBeforeActivate: 1
+  percentageStaticPrefab: 34
   staticPrefab: {fileID: 5751853092684875163, guid: fda30966ecb22fa4fb9be585d33b0e59,
     type: 3}
-  percentageDinamicPrefab: 0
+  percentageDinamicPrefab: 33
   dinamicPrefab: {fileID: 7494137248219657621, guid: 515abba3d85527c49aacaf06fdbec754,
     type: 3}
-  percentageAlivePrefab: 100
+  percentageAlivePrefab: 33
   alivePrefab: {fileID: 4788082413310213304, guid: 2ada568f69544c64fa9751f7cd375804,
     type: 3}
   statico:
@@ -44,6 +44,7 @@ MonoBehaviour:
   - percentage: 34
     numberClicks: 7
     speed: 2
+  typeOfFollow: 0
   vivo:
   - percentage: 33
     numberLetters: 1

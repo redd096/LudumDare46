@@ -59,32 +59,33 @@ namespace LudumDare46
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            //{
-                TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
+            CheckDie(collision.gameObject);
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            CheckDie(collision.gameObject);            
+        }
+
+        void CheckDie(GameObject hit)
+        {
+            if (LayerMask.LayerToName(hit.layer) == "Hazards")
+            {
+                TrapMovement trap = hit.GetComponent<TrapMovement>();
 
                 //check if is active
                 if (trap && trap.isActive)
                 {
-                    //Destroy();
-                    Destroy(gameObject);
+                    Die();
                 }
-            //}
+            }
         }
 
-        private void OnTriggerEnter2D(Collision2D collision)
+        void Die()
         {
-            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            //{
-            TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
-
-            //check if is active
-            if (trap && trap.isActive)
-            {
-                //Destroy();
-                Destroy(gameObject);
-            }
-            //}
+            //Destroy();
+            GameManager.instance.AntKilled();
+            Destroy(gameObject);
         }
 
 
@@ -114,6 +115,11 @@ namespace LudumDare46
                 aiPath.SearchPath();
                 yield return new WaitForSeconds(pauseBetweenTargetHops);
             }
+        }
+
+        private void OnEnable()
+        {
+            GameManager.instance.AntSpawned();
         }
 
     }
