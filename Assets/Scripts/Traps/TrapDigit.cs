@@ -5,14 +5,12 @@ using TMPro;
 
 namespace LudumDare46
 {
-    public class TrapDigit : MonoBehaviour
+    public class TrapDigit : TrapBehaviour
     {
         [Header("Debug Digit")]
         [SerializeField] Keys[] keysToDisable = default;
 
         int keysIndex;
-
-        TextMeshPro instruction_text;
 
         void Update()
         {
@@ -38,7 +36,7 @@ namespace LudumDare46
 
         }
 
-        protected void UpdateUI()
+        protected override void UpdateUI()
         {
             instruction_text.text = keysToDisable[keysIndex].ToString().ToUpper();
         }
@@ -64,10 +62,10 @@ namespace LudumDare46
             UpdateUI();
         }
 
-        protected void Die()
+        protected override void Die()
         {
-            gameObject.SetActive(false);
-            FindObjectOfType<GameManager>().OnTrapDisabled();
+            base.Die();
+
             keysIndex = 0;
         }
 

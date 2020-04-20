@@ -5,12 +5,10 @@ using TMPro;
 
 namespace LudumDare46
 {
-    public class TrapClick : MonoBehaviour
+    public class TrapClick : TrapBehaviour
     {
         [Header("Debug Click")]
         [SerializeField] int clickToRemove = 5;
-
-        TextMeshPro instruction_text;
 
         protected void OnMouseDown()
         {
@@ -26,7 +24,7 @@ namespace LudumDare46
             UpdateUI();
         }
 
-        protected void UpdateUI()
+        protected override void UpdateUI()
         {
             instruction_text.text = clickToRemove.ToString();
         }
@@ -39,10 +37,9 @@ namespace LudumDare46
             UpdateUI();
         }
 
-        protected void Die()
+        protected override void Die()
         {
-            FindObjectOfType<GameManager>().OnTrapDisabled();
-            gameObject.SetActive(false);
+            base.Die();
         }
     }
 }

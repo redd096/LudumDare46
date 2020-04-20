@@ -26,7 +26,7 @@ namespace LudumDare46
 
         // cached references
 
-        protected internal float elapsedTime = 0f;
+        public float elapsedTime { get; private set; }
 
         private void OnEnable()
         {
