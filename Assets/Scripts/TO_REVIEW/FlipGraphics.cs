@@ -11,24 +11,24 @@ namespace LudumDare46
     {
 
         SpriteRenderer spriteRenderer;
-        AIDestinationSetter setter;
-        // Start is called before the first frame update
+        AIPath aiPath;
+
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
-            setter = GetComponentInParent<AIDestinationSetter>();
+
+            aiPath = GetComponentInParent<AIPath>();
         }
 
-        // Update is called once per frame
         void Update()
-        {
-            if(setter.target == null) { return; }
+        {                        
+            float speed = aiPath.velocity.x;
 
-            if ((setter.target.position.x - transform.position.x) > Mathf.Epsilon)
+            if (speed > 0.5f)
             {
                 spriteRenderer.flipX = true;
             }
-            else if ((setter.target.position.x - transform.position.x) < -Mathf.Epsilon)
+            else if (speed < -0.5f)
             {
                 spriteRenderer.flipX  = false;
             }

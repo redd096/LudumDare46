@@ -60,8 +60,8 @@ namespace LudumDare46
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            //{
+            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+            {
                 TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
 
                 //check if is active
@@ -70,7 +70,7 @@ namespace LudumDare46
                     //Destroy();
                     Destroy(gameObject);
                 }
-            //}
+            }
         }
 
         public void Destroy()

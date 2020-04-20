@@ -138,7 +138,7 @@ namespace LudumDare46
             GameObject trapInstantiated = vivoPool.Instantiate(trapSpawnerConfig.alivePrefab.gameObject);
             trapInstantiated.transform.parent = transform;
             trapInstantiated.GetComponent<TrapDigit>().Set(numberLetters);
-            trapInstantiated.GetComponent<TrapMovement>().Set(trapSpawnerConfig.timeBeforeActivate, speed);
+            trapInstantiated.GetComponent<TrapMovement>().Set(trapSpawnerConfig.timeBeforeActivate, speed, trapSpawnerConfig.typeOfFollow);
 
             //set random position
             trapInstantiated.transform.position = Utils.GetRandomWalkableNode();
