@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace LudumDare46
 {
@@ -15,7 +16,8 @@ namespace LudumDare46
 
         [SerializeField] private LevelParametersConfig levelParms = default;
 
-        [SerializeField] LevelTimer levelTimer;
+        [SerializeField] LevelTimer levelTimer = default;
+        [SerializeField] Slider antSlider = default;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
@@ -131,11 +133,18 @@ namespace LudumDare46
 
         #endregion
 
+        private void UpdateAntSlider(float percentage)
+        {
+            antSlider.value = percentage;
+        }
+
         private void CheckGameOver()
         {
             float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
             Debug.Log("Potentially Alive: " + potentiallyAlive);
             Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
+
+            UpdateAntSlider(potentiallyAlive / levelParms.AntsToSpawn);
 
             if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
