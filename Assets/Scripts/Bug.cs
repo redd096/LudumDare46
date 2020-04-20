@@ -59,36 +59,35 @@ namespace LudumDare46
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            //{
-            TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
-
-            //check if is active
-            if (trap && trap.isActive)
+            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
             {
-                //Destroy();
-                FindObjectOfType<GameManager>().OnAntKilled();
-                Destroy(gameObject);
+                TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
+
+                //check if is active
+                if (trap && trap.isActive)
+                {
+                    //Destroy();
+                    Destroy(gameObject);
+                }
             }
-            //}
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
 
-            //if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
-            //{
-            TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
-
-            //check if is active
-            if (trap && trap.isActive)
+            if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
             {
-                //Destroy();
-                FindObjectOfType<GameManager>().OnAntKilled();
-                Destroy(gameObject);
+                TrapMovement trap = collision.gameObject.GetComponent<TrapMovement>();
 
+                //check if is active
+                if (trap && trap.isActive)
+                {
+                    //Destroy();
+                    FindObjectOfType<GameManager>().OnAntKilled();
+                    Destroy(gameObject);
+
+                }
             }
-            //}
         }
 
 

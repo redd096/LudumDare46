@@ -44,6 +44,7 @@ MonoBehaviour:
   - percentage: 34
     numberClicks: 7
     speed: 2
+  typeOfFollow: 0
   vivo:
   - percentage: 33
     numberLetters: 1

@@ -40,7 +40,7 @@ namespace LudumDare46
 
         protected void UpdateUI()
         {
-            instruction_text.text = keysToDisable[keysIndex].ToString();
+            instruction_text.text = keysToDisable[keysIndex].ToString().ToUpper();
         }
 
         public void Set(int numberLetters)
