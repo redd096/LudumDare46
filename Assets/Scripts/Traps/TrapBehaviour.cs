@@ -20,6 +20,7 @@ namespace LudumDare46
         {
             //update how to kill
         }
+
         protected virtual void Die()
         {
             gameObject.SetActive(false);

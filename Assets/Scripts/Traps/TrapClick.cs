@@ -12,6 +12,8 @@ namespace LudumDare46
 
         protected void OnMouseDown()
         {
+            if (GameManager.pause) return;
+
             clickToRemove--;
 
             //check if dead

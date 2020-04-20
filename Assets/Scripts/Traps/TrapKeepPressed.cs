@@ -19,6 +19,8 @@ namespace LudumDare46
 
         protected void Update()
         {
+            if (GameManager.pause) return;
+
             //if key up
             if(keepingPressed && Input.GetKeyUp(keysToDisable[keysIndex].ToString()))
             {
