@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
 
 namespace LudumDare46
 {
@@ -11,6 +12,8 @@ namespace LudumDare46
         public Action OnAntSpawned;
         public Action OnAntKilled;
         public Action OnTrapDisabled;
+
+        LevelTimer levelTimer;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
@@ -53,10 +56,27 @@ namespace LudumDare46
 
         void Awake()
         {
-            FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
             OnAntSpawned += AntSpawned;
             OnAntKilled += AntKilled;
             OnTrapDisabled += TrapDisabled;
+            levelTimer = FindObjectOfType<LevelTimer>();
+
+            StartCoroutine(WaitEnterAndStartTimer());
+        }
+
+        IEnumerator WaitEnterAndStartTimer()
+        {
+            levelTimer.gameObject.SetActive(false);
+
+            //wait enter
+            while(!Input.GetKeyDown(KeyCode.Return))
+            {
+                yield return null;
+            }
+
+            //set timer
+            levelTimer.gameObject.SetActive(true);
+            levelTimer.SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
         }
 
         private void StartSpawners()
