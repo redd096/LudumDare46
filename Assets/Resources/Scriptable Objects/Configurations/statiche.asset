@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 466552aab61c89a429fec4ad26544a77, type: 3}
-  m_Name: Trap Spawner Config
+  m_Name: statiche
   m_EditorClassIdentifier: 
-  minDelayBetweenSpawns: 2
-  maxDelayBetweenSpawns: 5
-  timeBeforeActivate: 1
-  percentageStaticPrefab: 33
+  minDelayBetweenSpawns: 6
+  maxDelayBetweenSpawns: 12
+  timeBeforeActivate: 7
+  percentageStaticPrefab: 100
   staticPrefab: {fileID: 5751853092684875163, guid: fda30966ecb22fa4fb9be585d33b0e59,
     type: 3}
-  percentageDinamicPrefab: 33
+  percentageDinamicPrefab: 0
   dinamicPrefab: {fileID: 7494137248219657621, guid: 515abba3d85527c49aacaf06fdbec754,
     type: 3}
-  percentageAlivePrefab: 34
+  percentageAlivePrefab: 0
   alivePrefab: {fileID: 4788082413310213304, guid: 2ada568f69544c64fa9751f7cd375804,
     type: 3}
   statico:
   - percentage: 33
     numberLetters: 1
-    timeKeepPressed: 2
+    timeKeepPressed: 0.5
   - percentage: 33
     numberLetters: 2
-    timeKeepPressed: 2.5
+    timeKeepPressed: 0.5
   - percentage: 34
     numberLetters: 3
-    timeKeepPressed: 3
+    timeKeepPressed: 0.5
   dinamico:
   - percentage: 33
     numberClicks: 3

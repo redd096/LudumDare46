@@ -184,7 +184,7 @@ namespace LudumDare46
 
         void GameOver(bool win)
         {
-            int remainedAnts = currentAntsSpawned - currentAntsKilled;
+            float remainedAnts = currentAntsSpawned - currentAntsKilled;
             int currentStars = 0;
 
             if (win)
