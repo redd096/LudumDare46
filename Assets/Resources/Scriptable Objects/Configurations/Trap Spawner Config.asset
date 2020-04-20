@@ -15,13 +15,13 @@ MonoBehaviour:
   minDelayBetweenSpawns: 2
   maxDelayBetweenSpawns: 5
   timeBeforeActivate: 1
-  percentageStaticPrefab: 34
+  percentageStaticPrefab: 0
   staticPrefab: {fileID: 5751853092684875163, guid: fda30966ecb22fa4fb9be585d33b0e59,
     type: 3}
-  percentageDinamicPrefab: 33
+  percentageDinamicPrefab: 100
   dinamicPrefab: {fileID: 7494137248219657621, guid: 515abba3d85527c49aacaf06fdbec754,
     type: 3}
-  percentageAlivePrefab: 33
+  percentageAlivePrefab: 0
   alivePrefab: {fileID: 4788082413310213304, guid: 2ada568f69544c64fa9751f7cd375804,
     type: 3}
   statico:
