@@ -90,7 +90,7 @@ namespace LudumDare46
             aiPath.maxSpeed = 0;
             SpriteRenderer spriteRender = GetComponentInChildren<SpriteRenderer>();
             spriteRender.sprite = bloodSprite;
-            spriteRender.sortingLayerID = 1;
+            spriteRender.sortingOrder = 1;
             Destroy(gameObject, 2f);
         }
 
