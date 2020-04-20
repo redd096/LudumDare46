@@ -16,8 +16,12 @@ namespace LudumDare46
 
         [SerializeField] private LevelParametersConfig levelParms = default;
 
-        [SerializeField] LevelTimer levelTimer = default;
-        [SerializeField] Slider antSlider = default;
+        [SerializeField] Sprite volumeOn = default;
+        [SerializeField] Sprite volumeOff = default;
+
+        LevelTimer levelTimer;
+        Slider antSlider;
+        Image volumeButton;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
@@ -49,11 +53,15 @@ namespace LudumDare46
 
         void SetDefaults()
         {
-            if (levelTimer == null)
-            {
-                levelTimer = FindObjectOfType<LevelTimer>();
-            }
+            levelTimer = FindObjectOfType<LevelTimer>();
 
+            GameObject antSlider_object = GameObject.Find("Total Ants Slider");
+            antSlider = antSlider_object.GetComponent<Slider>();
+            antSlider_object.SetActive(false);
+
+            GameObject statsPanel_object = GameObject.Find("Stats Panel");
+            volumeButton = statsPanel_object.transform.Find("Options").Find("Audio Button").GetComponent<Image>();
+            statsPanel_object.SetActive(false);
 
             StartCoroutine(WaitEnterAndStartTimer());
 
@@ -65,6 +73,10 @@ namespace LudumDare46
             currentTrapsDisabled = 0;
 
             Resume();
+
+            //set volume
+            AudioListener.volume = PlayerPrefs.GetFloat("Volume", 1);
+            SetVolumeImage();
         }
 
         IEnumerator WaitEnterAndStartTimer()
@@ -214,6 +226,27 @@ namespace LudumDare46
             pause = false;
 
             Time.timeScale = 1;
+        }
+
+        public void Volume()
+        {
+            AudioListener.volume = AudioListener.volume == 1 ? 0 : 1;
+
+            PlayerPrefs.SetFloat("Volume", AudioListener.volume);
+
+            SetVolumeImage();
+        }
+
+        void SetVolumeImage()
+        {
+            if(AudioListener.volume == 1)
+            {
+                instance.volumeButton.sprite = volumeOn;
+            }
+            else
+            {
+                instance.volumeButton.sprite = volumeOff;
+            }
         }
 
         #endregion
