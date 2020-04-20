@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5176,7 +5176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea1c3f501c5e6f449bf7907a108bb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapSpawnerConfig: {fileID: 11400000, guid: 165e71678b7beef409bed86ac9176192, type: 2}
+  trapSpawnerConfig: {fileID: 11400000, guid: 8363b2fafa4e6b149a96155eca889601, type: 2}
 --- !u!1001 &1370753350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6580,7 +6580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -81.4, y: 0.000015258789}
+  m_AnchoredPosition: {x: -81.399994, y: 0.000015258789}
   m_SizeDelta: {x: 137.9, y: -21.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728340522
@@ -7699,7 +7699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2043440262
 Transform:
   m_ObjectHideFlags: 0
@@ -9610,7 +9610,7 @@ PrefabInstance:
     - target: {fileID: 5942120032617359537, guid: dc0b3270d8b42aa42adb5994e82b4d88,
         type: 3}
       propertyPath: orthographic size
-      value: 14.063811
+      value: 14.063887
       objectReference: {fileID: 0}
     - target: {fileID: 5942120032617359542, guid: dc0b3270d8b42aa42adb5994e82b4d88,
         type: 3}
