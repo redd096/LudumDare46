@@ -64,6 +64,11 @@ namespace LudumDare46
 
         }
 
+        public void CreditsImage(GameObject credits)
+        {
+            credits.SetActive(!credits.activeSelf);
+        }
+
     }
 
 }

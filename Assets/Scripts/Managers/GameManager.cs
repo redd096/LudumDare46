@@ -1,20 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace LudumDare46
 {
 
     public class GameManager : MonoBehaviour
     {
-        public static GameManager instance;
+        public static GameManager instance { get; private set; }
+        public static bool pause { get; private set; }
 
         public int Stars { get; private set; }
         public float Score { get; private set; }
 
         [SerializeField] private LevelParametersConfig levelParms = default;
 
-        [SerializeField] LevelTimer levelTimer;
+        [SerializeField] Sprite volumeOn = default;
+        [SerializeField] Sprite volumeOff = default;
+
+        LevelTimer levelTimer;
+        Slider antSlider;
+        Image volumeButton;
 
         private int currentAntsSpawned = 0;
         private int currentAntsKilled = 0;
@@ -33,6 +40,7 @@ namespace LudumDare46
             {
                 //if no instance, this is the instance and set default values
                 instance = this;
+                DontDestroyOnLoad(this);
                 SetDefaults();
             }
             else
@@ -45,11 +53,15 @@ namespace LudumDare46
 
         void SetDefaults()
         {
-            if(levelTimer == null)
-            {
-                levelTimer = FindObjectOfType<LevelTimer>();
-            }
-            
+            levelTimer = FindObjectOfType<LevelTimer>();
+
+            GameObject antSlider_object = GameObject.Find("Total Ants Slider");
+            antSlider = antSlider_object.GetComponent<Slider>();
+            antSlider_object.SetActive(false);
+
+            GameObject statsPanel_object = GameObject.Find("Stats Panel");
+            volumeButton = statsPanel_object.transform.Find("Options").Find("Audio Button").GetComponent<Image>();
+            statsPanel_object.SetActive(false);
 
             StartCoroutine(WaitEnterAndStartTimer());
 
@@ -59,7 +71,12 @@ namespace LudumDare46
             currentAntsSpawned = 0;
             currentAntsKilled = 0;
             currentTrapsDisabled = 0;
-            DontDestroyOnLoad(this);
+
+            Resume();
+
+            //set volume
+            AudioListener.volume = PlayerPrefs.GetFloat("Volume", 1);
+            SetVolumeImage();
         }
 
         IEnumerator WaitEnterAndStartTimer()
@@ -70,7 +87,7 @@ namespace LudumDare46
             }
 
             //wait enter
-            while(!Input.GetKeyDown(KeyCode.Return))
+            while (!Input.GetKeyDown(KeyCode.Return))
             {
                 yield return null;
             }
@@ -96,7 +113,7 @@ namespace LudumDare46
             }
 
             var trapSpawners = FindObjectsOfType<TrapSpawner>();
-            for(int i = 0; i < trapSpawners.Length; i++)
+            for (int i = 0; i < trapSpawners.Length; i++)
             {
                 trapSpawners[i].StartSpawning();
             }
@@ -128,12 +145,19 @@ namespace LudumDare46
 
         #endregion
 
+        private void UpdateAntSlider(float percentage)
+        {
+            antSlider.value = percentage;
+        }
+
         private void CheckGameOver()
         {
             float potentiallyAlive = levelParms.AntsToSpawn - currentAntsKilled;
             Debug.Log("Potentially Alive: " + potentiallyAlive);
             Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
-            
+
+            UpdateAntSlider(potentiallyAlive / levelParms.AntsToSpawn);
+
             if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
                 Debug.Log("Game Over");
@@ -150,11 +174,11 @@ namespace LudumDare46
             {
                 currentStars = 1;
 
-                if(remainedAnts/ levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
+                if (remainedAnts / levelParms.AntsToSpawn >= levelParms.AntsForSecondStar)
                 {
                     currentStars = 2;
 
-                    if(currentTrapsDisabled >= levelParms.MinimumTrapsForThirdStar)
+                    if (currentTrapsDisabled >= levelParms.MinimumTrapsForThirdStar)
                     {
                         currentStars = 3;
                     }
@@ -173,6 +197,59 @@ namespace LudumDare46
         }
 
         #region public API
+
+        #region scene management
+
+        public void RestartGame()
+        {
+            SceneManager.LoadScene("Main Scene");
+        }
+
+        public void Quit()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        }
+
+        public void Pause()
+        {
+            pause = true;
+
+            Time.timeScale = 0;
+        }
+
+        public void Resume()
+        {
+            pause = false;
+
+            Time.timeScale = 1;
+        }
+
+        public void Volume()
+        {
+            AudioListener.volume = AudioListener.volume == 1 ? 0 : 1;
+
+            PlayerPrefs.SetFloat("Volume", AudioListener.volume);
+
+            SetVolumeImage();
+        }
+
+        void SetVolumeImage()
+        {
+            if(AudioListener.volume == 1)
+            {
+                instance.volumeButton.sprite = volumeOn;
+            }
+            else
+            {
+                instance.volumeButton.sprite = volumeOff;
+            }
+        }
+
+        #endregion
 
         public void TriggeredTimerFinish()
         {

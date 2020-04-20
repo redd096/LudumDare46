@@ -14,7 +14,7 @@ namespace LudumDare46
 
         void Update()
         {
-            //base.Update();
+            if (GameManager.pause) return;
 
             if (keysIndex >= keysToDisable.Length)
                 Debug.LogError("Come ci siamo arrivati a " + keysIndex + " numeri?");
