@@ -12,8 +12,10 @@ namespace LudumDare46
         [Header("Ants Spawned in the game")]
         [SerializeField] [Min(0)] private int antsToSpawn = 500;
 
-        [Header("Percentage of how many Ants to save")]
+        [Header("Stars Conditions")]
         [SerializeField] [Range(0f, 1f)] private float antsToSave = .5f;
+        [SerializeField] [Range(0f, 1f)] private float antsForSecondStar = 0.6f;
+        [SerializeField] [Min(0)] private int minimumTrapsForThirdStar = 10;
 
         /// <summary>
         /// Are the anthills constantly spawning?
@@ -27,6 +29,8 @@ namespace LudumDare46
         public bool Loop { get { return infiniteSpawning; } }
         public int AntsToSpawn { get { return antsToSpawn; } }
         public float AntsToSave { get { return antsToSave; } }
+        public float AntsForSecondStar { get { return antsForSecondStar; } }
+        public int MinimumTrapsForThirdStar {  get { return minimumTrapsForThirdStar; } }
     }
 
 }

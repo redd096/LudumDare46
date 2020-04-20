@@ -5,15 +5,7 @@ using TMPro;
 
 namespace LudumDare46
 {
-    [System.Serializable]
-    public enum Keys
-    {
-        q, w, e, r, t, y, u, i, o, p,
-        a, s, d, f, g, h, j, k, l,
-        z, x, c, v, b, n, m,
-    }
-
-    public class TrapKeepPressed : MonoBehaviour
+    public class TrapKeepPressed : TrapBehaviour
     {
         [Header("Debug KeepPressed")]
         [SerializeField] Keys[] keysToDisable = default;
@@ -24,7 +16,6 @@ namespace LudumDare46
         float lastTimePressed;
 
         SpriteRenderer instruction_image;
-        TextMeshPro instruction_text;
 
         protected void Update()
         {
@@ -32,7 +23,7 @@ namespace LudumDare46
             if(keepingPressed && Input.GetKeyUp(keysToDisable[keysIndex].ToString()))
             {
                 keepingPressed = false;
-                UpdateUI(true);
+                UpdatePressedUI(true);
             }
             
             //if pressed key
@@ -43,7 +34,7 @@ namespace LudumDare46
             }
 
             if (keepingPressed)
-                UpdateUI();
+                UpdatePressedUI();
 
             //if keep pressed for the time
             if(keepingPressed && Time.time > lastTimePressed)
@@ -58,11 +49,11 @@ namespace LudumDare46
                     return;
                 }
 
-                UpdateUI(true);
+                UpdatePressedUI(true);
             }
         }
 
-        protected void UpdateUI(bool reset = false)
+        void UpdatePressedUI(bool reset = false)
         {
             instruction_text.text = keysToDisable[keysIndex].ToString().ToUpper();
 
@@ -103,12 +94,13 @@ namespace LudumDare46
 
             instruction_image = transform.Find("Instruction_Image").GetComponent<SpriteRenderer>();
             instruction_text = GetComponentInChildren<TextMeshPro>();
-            UpdateUI(true);
+            UpdatePressedUI(true);
         }
 
-        protected void Die()
+        protected override void Die()
         {
-            gameObject.SetActive(false);
+            base.Die();
+
             keysIndex = 0;
         }
     }
