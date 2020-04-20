@@ -89,6 +89,7 @@ namespace LudumDare46
         protected void Die()
         {
             gameObject.SetActive(false);
+            keysIndex = 0;
         }
     }
 }
