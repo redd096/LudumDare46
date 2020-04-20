@@ -12,7 +12,6 @@ namespace LudumDare46
             FindObjectOfType<LevelTimer>().SetTimers(levelParms.LevelTime, levelParms.LevelPreparationTime);
         }
 
-
         private void StartSpawners()
         {
             var anthillsArray = FindObjectsOfType<Anthill>();

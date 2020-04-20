@@ -20,7 +20,7 @@ namespace LudumDare46
         findRandomAndKill,
     }
 
-    [RequireComponent(typeof(AILerp), typeof(AIDestinationSetter))]
+    [RequireComponent(typeof(AIPath), typeof(AIDestinationSetter))]
     public class TrapMovement : MonoBehaviour
     {
         [Header("Trap Movement")]
@@ -32,7 +32,8 @@ namespace LudumDare46
         [Header("Debug Movement")]
         [SerializeField] protected float speed = 1;
         [SerializeField] protected GameObject[] patrolMovements = default;
-        [SerializeField] float approx = 0.1f;
+
+        public bool isActive { get; private set; }
 
         int patrolIndex;
 
@@ -40,12 +41,15 @@ namespace LudumDare46
 
         Transform target;
 
-        private AILerp aILerp;
+        private AIPath aiPath;
         private AIDestinationSetter aIDestinationSetter;
+
+        
+        SpriteRenderer trap_image;
 
         private void Awake()
         {
-            aILerp = GetComponent<AILerp>();
+            aiPath = GetComponent<AIPath>();
             aIDestinationSetter = GetComponent<AIDestinationSetter>();
         }
 
@@ -80,20 +84,42 @@ namespace LudumDare46
 
         protected virtual void Update()
         {
+            if (isActive == false) return;
+
             if (typeOfTrap == TypeOfTrap.dinamico)
                 Dinamico();
             else if (typeOfTrap == TypeOfTrap.vivo)
                 Vivo();
         }
 
-        protected virtual void OnMouseDown()
-        {
-            Debug.Log("clicked");
+        public void Set(float timeToActivate, float speed = 0)
+        {            
+            trap_image = transform.Find("Trap_Graphics").GetComponent<SpriteRenderer>();
+
+            this.speed = speed;
+
+            isActive = false;
+            StartCoroutine(ActiveTrap(timeToActivate));
         }
 
-        public void Set(float speed)
+        IEnumerator ActiveTrap(float timeToActivate)
         {
-            this.speed = speed;
+            float time = Time.time + timeToActivate;
+
+            while(time > Time.time)
+            {
+                float delta = Mathf.Lerp(1, 0, 1 / (timeToActivate / (time - Time.time)));
+
+                //set image color
+                Color imageColor = trap_image.color;
+                imageColor.a = delta;
+
+                trap_image.color = imageColor;
+
+                yield return null;
+            }
+
+            isActive = true;
         }
 
 
@@ -114,8 +140,8 @@ namespace LudumDare46
                 return;
 
             aIDestinationSetter.target = patrolMovements[patrolIndex].transform;
-            aILerp.SearchPath();
-            aILerp.speed = speed;
+            aiPath.SearchPath();
+            aiPath.maxSpeed = speed;
 
             patrolCoroutine = StartCoroutine(CheckReachedPatrolPoint());
         }
@@ -125,7 +151,7 @@ namespace LudumDare46
 
             // sostituire con le info dal Path.
             //reached
-            while (aILerp.pathPending || !aILerp.reachedEndOfPath)
+            while (aiPath.pathPending || !aiPath.reachedEndOfPath)
             {
                 yield return null;
             }
@@ -171,8 +197,8 @@ namespace LudumDare46
 
             // Sostituire il movimento verso il target con questa operazione:
             aIDestinationSetter.target = target.transform;
-            aILerp.SearchPath();
-            aILerp.speed = speed;
+            aiPath.SearchPath();
+            aiPath.maxSpeed = speed;
 
             //Vector3 direction = (target.position - transform.position).normalized;
 

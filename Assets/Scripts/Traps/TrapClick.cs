@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 namespace LudumDare46
 {
@@ -8,6 +9,8 @@ namespace LudumDare46
     {
         [Header("Debug Click")]
         [SerializeField] int clickToRemove = 5;
+
+        TextMeshPro instruction_text;
 
         protected void OnMouseDown()
         {
@@ -25,12 +28,15 @@ namespace LudumDare46
 
         protected void UpdateUI()
         {
-            Debug.Log(clickToRemove);
+            instruction_text.text = clickToRemove.ToString();
         }
 
         public void Set(int numberClicks)
         {
             clickToRemove = numberClicks;
+
+            instruction_text = GetComponentInChildren<TextMeshPro>();
+            UpdateUI();
         }
 
         protected void Die()
