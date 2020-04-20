@@ -226,7 +226,7 @@ namespace LudumDare46
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
-#else
+#elif !UNITY_WEBGL
             Application.Quit();
 #endif
         }

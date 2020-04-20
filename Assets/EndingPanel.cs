@@ -26,7 +26,10 @@ namespace LudumDare46
                 score = GameManager.instance.Score;
                 starCount = GameManager.instance.Stars;
             }
-            scoreText.text = score.ToString("F0");
+            scoreText.text = string.Format("{0:#,#}", score);
+            if (score <= 0)
+                scoreText.text = "0";
+
             foreach (var ir in stars)
             {
                 ir.sprite = starsSprites[0];
