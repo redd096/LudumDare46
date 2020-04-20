@@ -43,7 +43,6 @@ namespace LudumDare46
             OnAntKilled += AntKilled;
         }
 
-
         private void StartSpawners()
         {
             var anthillsArray = FindObjectsOfType<Anthill>();

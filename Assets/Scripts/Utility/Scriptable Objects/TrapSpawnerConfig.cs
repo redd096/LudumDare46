@@ -38,6 +38,9 @@ namespace LudumDare46
         public float minDelayBetweenSpawns = 1;
         public float maxDelayBetweenSpawns = 2;
 
+        [Header("Time to activate a trap after spawn")]
+        public float timeBeforeActivate = 1;
+
 
         [Header("General")]
         [Range(0, 100)]
