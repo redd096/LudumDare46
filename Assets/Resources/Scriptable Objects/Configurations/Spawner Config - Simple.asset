@@ -17,4 +17,4 @@ MonoBehaviour:
   numberOfAnts: 3
   timeBetweenSpawns: 2
   spawnRandomFactor: 1
-  antSpeed: 2
+  antSpeed: 3

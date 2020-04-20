@@ -16,6 +16,6 @@ MonoBehaviour:
   preparationTime: 3
   antsToSpawn: 100
   antsToSave: 0.5
-  antsForSecondStar: 0.6
-  minimumTrapsForThirdStar: 25
-  infiniteSpawning: 1
+  antsForSecondStar: 0.65
+  minimumTrapsForThirdStar: 50
+  infiniteSpawning: 0

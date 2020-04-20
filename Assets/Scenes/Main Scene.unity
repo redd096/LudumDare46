@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2377,7 +2377,7 @@ PrefabInstance:
     - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: delayToStart
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
@@ -3922,7 +3922,7 @@ PrefabInstance:
     - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: delayToStart
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
@@ -4511,6 +4511,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
+        type: 3}
+      propertyPath: delayToStart
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
+        type: 3}
+      propertyPath: waveConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f157680375e7214a9d032d547632126,
+        type: 2}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: m_Name
@@ -5641,12 +5652,12 @@ PrefabInstance:
         type: 3}
       propertyPath: waveConfig
       value: 
-      objectReference: {fileID: 11400000, guid: 9f157680375e7214a9d032d547632126,
+      objectReference: {fileID: 11400000, guid: fb54f20618e43004baff901d5d0e6efd,
         type: 2}
     - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: delayToStart
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
@@ -5920,12 +5931,12 @@ PrefabInstance:
         type: 3}
       propertyPath: waveConfig
       value: 
-      objectReference: {fileID: 11400000, guid: 9f157680375e7214a9d032d547632126,
+      objectReference: {fileID: 11400000, guid: fb54f20618e43004baff901d5d0e6efd,
         type: 2}
     - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: delayToStart
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
@@ -9723,7 +9734,7 @@ PrefabInstance:
     - target: {fileID: 8715222353156684285, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}
       propertyPath: delayToStart
-      value: 3
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8715222353156684286, guid: 4fa9b459305d8be468e8b907054d6a25,
         type: 3}

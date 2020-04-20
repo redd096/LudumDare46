@@ -57,7 +57,7 @@ namespace LudumDare46
 
             GameObject antSlider_object = GameObject.Find("Total Ants Slider");
             antSlider = antSlider_object.GetComponent<Slider>();
-            antSlider_object.SetActive(false);
+            //antSlider_object.SetActive(false);
 
             GameObject statsPanel_object = GameObject.Find("Stats Panel");
             volumeButton = statsPanel_object.transform.Find("Options").Find("Audio Button").GetComponent<Image>();
