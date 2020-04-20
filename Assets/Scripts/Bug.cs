@@ -37,6 +37,7 @@ namespace LudumDare46
         private float speed;
         [SerializeField] private GameObject target;
         [SerializeField] private float pauseBetweenTargetHops;
+        [SerializeField] private Sprite bloodSprite = default;
 
         private AIPath aiPath;
         private AIDestinationSetter aIDestinationSetter;
@@ -85,7 +86,10 @@ namespace LudumDare46
         {
             //Destroy();
             GameManager.instance.AntKilled();
-            Destroy(gameObject);
+            GetComponent<Collider2D>().enabled = false;
+            aiPath.maxSpeed = 0;
+            GetComponentInChildren<SpriteRenderer>().sprite = bloodSprite;
+            Destroy(gameObject, 2f);
         }
 
 

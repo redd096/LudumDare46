@@ -188,6 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 8229492469629905134, guid: e294e29ebfdc2fe4abfa6dbf93c4ae90, type: 3}
   pauseBetweenTargetHops: 5
+  bloodSprite: {fileID: 21300000, guid: 5afc0fd16b66f754d870d1ce4520b456, type: 3}
 --- !u!61 &1609797111589132085
 BoxCollider2D:
   m_ObjectHideFlags: 0
