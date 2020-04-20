@@ -26,7 +26,7 @@ namespace LudumDare46
         [Header("Trap Movement")]
         [SerializeField] TypeOfTrap typeOfTrap = default;
 
-        [Header("Pericolo Vivo")]
+        [Header("Debug Vivo")]
         [SerializeField] TypeOfVivo typeOfVivo = default;
 
         [Header("Debug Movement")]
@@ -92,11 +92,12 @@ namespace LudumDare46
                 Vivo();
         }
 
-        public void Set(float timeToActivate, float speed = 0)
+        public void Set(float timeToActivate, float speed = 0, TypeOfVivo typeOfFollow = default)
         {            
             trap_image = transform.Find("Trap_Graphics").GetComponent<SpriteRenderer>();
 
             this.speed = speed;
+            typeOfVivo = typeOfFollow;
 
             isActive = false;
             StartCoroutine(ActiveTrap(timeToActivate));

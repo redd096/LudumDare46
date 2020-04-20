@@ -61,6 +61,7 @@ namespace LudumDare46
         public DinamicStruct[] dinamico;
 
         [Header("Vivo")]
+        public TypeOfVivo typeOfFollow;
         public AliveStruct[] vivo;
     }
 }
