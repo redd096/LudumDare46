@@ -50,7 +50,7 @@ namespace LudumDare46
         private void TrapDisabled()
         {
             currentTrapsDisabled++;
-            Debug.Log("Trap Disabled!");
+            Debug.Log("Trap Disabled! New total: " + currentTrapsDisabled);
         }
 
 

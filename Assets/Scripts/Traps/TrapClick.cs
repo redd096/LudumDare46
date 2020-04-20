@@ -41,6 +41,7 @@ namespace LudumDare46
 
         protected void Die()
         {
+            FindObjectOfType<GameManager>().OnTrapDisabled();
             gameObject.SetActive(false);
         }
     }

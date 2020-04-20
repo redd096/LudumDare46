@@ -67,6 +67,7 @@ namespace LudumDare46
                 if (trap && trap.isActive)
                 {
                     //Destroy();
+                    FindObjectOfType<GameManager>().OnAntKilled();
                     Destroy(gameObject);
                 }
             }
