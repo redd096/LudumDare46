@@ -88,7 +88,9 @@ namespace LudumDare46
             GameManager.instance.AntKilled();
             GetComponent<Collider2D>().enabled = false;
             aiPath.maxSpeed = 0;
-            GetComponentInChildren<SpriteRenderer>().sprite = bloodSprite;
+            SpriteRenderer spriteRender = GetComponentInChildren<SpriteRenderer>();
+            spriteRender.sprite = bloodSprite;
+            spriteRender.sortingLayerID = 1;
             Destroy(gameObject, 2f);
         }
 
