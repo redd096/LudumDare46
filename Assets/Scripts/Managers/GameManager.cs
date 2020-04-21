@@ -173,7 +173,10 @@ namespace LudumDare46
             Debug.Log("Potentially Alive: " + potentiallyAlive);
             Debug.Log("Percentage: " + potentiallyAlive / levelParms.AntsToSpawn);
 
-            UpdateAntSlider(potentiallyAlive / levelParms.AntsToSpawn);
+            float numberAntsToSave = levelParms.AntsToSpawn * levelParms.AntsToSave;
+            float aliveForFirstStar = numberAntsToSave - currentAntsKilled;
+
+            UpdateAntSlider(aliveForFirstStar / numberAntsToSave);
 
             if (potentiallyAlive / levelParms.AntsToSpawn < levelParms.AntsToSave)
             {
