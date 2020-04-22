@@ -13,6 +13,7 @@ namespace LudumDare46
         [SerializeField] private TextMeshProUGUI levelTimer = default;
         [SerializeField] private GameObject waitEnterPanel = default;
         [SerializeField] private GameObject preparationTimePanel = default;
+        [SerializeField] private GameObject tutorialPanel = default;
         [SerializeField] private GameObject statsPanel = default;
         //[Min(0f)]
         //[SerializeField] private float whenToChangeMusicSpeed = default;
@@ -87,6 +88,7 @@ namespace LudumDare46
                 levelStarted = true;
                 waitEnterPanel.SetActive(false);
                 preparationTimePanel.SetActive(false);
+                tutorialPanel.SetActive(false);
                 statsPanel.SetActive(true);
 
                 levelTimer.gameObject.SetActive(true);
@@ -102,6 +104,7 @@ namespace LudumDare46
             levelStarted = false;
             levelTimer.gameObject.SetActive(false);
             preparationTimePanel.SetActive(true);
+            tutorialPanel.SetActive(true);
             preparationTime = pTime;
             elapsedTime = 0f;
             triggeredLevelFinish = false;
